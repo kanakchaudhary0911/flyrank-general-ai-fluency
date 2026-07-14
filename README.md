@@ -1,20 +1,34 @@
-<<<<<<< HEAD
-# FlyRank General AI Fluency
+# FlyRank AI Fluency Program
 
-This repository contains my weekly assignments, workflow audits, reflections, and learning progress completed as part of the FlyRank General AI Fluency track.
+This repository contains my assignments, portfolio planning exercises, AI workflow audits, and learning progress completed as part of the **FlyRank AI Fluency Program**.
 
-The repository documents my journey in developing practical skills for collaborating with AI effectively, efficiently, ethically, and responsibly.
+The repository documents my journey in building AI-assisted workflows, improving productivity, and developing a professional portfolio through structured, project-based assignments.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 Week-1
-└── FL-01_AI-Workflow-Audit-and-Tool-Setup
-    ├── AI_Workflow_Audit.pdf
-    ├── Anthropic_Academy_Enrollment.png
-    └── Claude_Project_Configuration.png
+├── FL-01_AI-Workflow-Audit-and-Tool-Setup
+│   ├── AI_Workflow_Audit.pdf
+│   ├── Anthropic_Academy_Enrollment.png
+│   ├── Claude_Project_Configuration.png
+│   └── README.md
+│
+├── FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit
+│   ├── FL-02_Portfolio_Sitemap_Kanak_Chaudhary.pdf
+│   ├── 01_Claude_Project.png
+│   ├── 02_Claude_Pressure_Test_Part1.png
+│   ├── 03_Claude_Pressure_Test_Part2.png
+│   ├── 04_Claude_Pressure_Test_Part3.png
+│   ├── 05_Claude_Final_Recommendations.png
+│   └── README.md
+│
+└── FL-03_What_Are_You_Proving
+    ├── FL-03_What_Are_You_Proving.pdf
+    ├── Screenshots/
+    └── README.md
 ```
 
 ---
@@ -24,17 +38,20 @@ Week-1
 ### Week 1
 
 - ✅ FL-01 – AI Workflow Audit and Tool Setup
+- ✅ FL-02 – Draw the Path: Portfolio Sitemap + Toolkit
+- ✅ FL-03 – What Are You Proving?
 
 ---
 
 ## Skills Practiced
 
 - AI Workflow Design
-- AI Task Classification
-- Claude Projects
-- AI Collaboration
-- AI Fluency Framework
-- Prompt Engineering Foundations
+- Prompt Engineering
+- Portfolio Planning
+- Technical Communication
+- Critical Thinking
+- Human-AI Collaboration
+- Git & GitHub
 
 ---
 
@@ -53,8 +70,8 @@ Week-1
 | Week | Assignment | Status |
 |------|------------|--------|
 | Week 1 | FL-01 – AI Workflow Audit and Tool Setup | ✅ Completed |
-
-More assignments and reflections will be added as the internship progresses.
+| Week 1 | FL-02 – Draw the Path: Portfolio Sitemap + Toolkit | ✅ Completed |
+| Week 1 | FL-03 – What Are You Proving? | ✅ Completed |
 
 ---
 
@@ -63,43 +80,3 @@ More assignments and reflections will be added as the internship progresses.
 **Kanak Chaudhary**
 
 BCA Student | Backend Developer | AI & Web Development Enthusiast
-
-GitHub: https://github.com/kanakchaudhary0911
-=======
-# FlyRank General AI Fluency
-
-This repository contains my assignments, portfolio planning exercises, AI workflow audits, and learning progress completed as part of the **FlyRank AI Fluency Program**.
-
-The repository documents my journey in building AI-assisted workflows, improving productivity, and developing a professional backend developer portfolio.
-
----
-
-## Repository Structure
-
-```text
-Week-1
-├── FL-01_AI-Workflow-Audit-and-Tool-Setup
-│   ├── AI_Workflow_Audit.pdf
-│   ├── Anthropic_Academy_Enrollment.png
-│   └── Claude_Project_Configuration.png
-│
-└── FL-02_Draw_the_Path_Portfolio_Sitemap_Toolkit
-    ├── FL-02_Portfolio_Sitemap_Kanak_Chaudhary.pdf
-    ├── 01_Claude_Project_Setup.png
-    ├── 02_Claude_Pressure_Test_Part1.png
-    ├── 03_Claude_Pressure_Test_Part2.png
-    ├── 04_Claude_Pressure_Test_Part3.png
-    └── 05_Claude_Final_Recommendations.png
-```
-
----
-
-## Progress
-
-### Week 1
-
-- ✅ FL-01 – AI Workflow Audit and Tool Setup
-- ✅ FL-02 – Draw the Path: Portfolio Sitemap + Toolkit
-
-More assignments will be added as the internship progresses.
->>>>>>> e901e67 (docs: add FL-02 portfolio sitemap and toolkit deliverables)
