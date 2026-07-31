@@ -1,83 +1,49 @@
-# FlyRank General AI Fluency
+# FlyRank AI Fluency Program
 
-This repository contains my assignments, portfolio planning exercises, AI-assisted workflows, documentation, and learning progress completed as part of the **FlyRank General AI Fluency Program**.
+This repository contains my assignments, portfolio planning exercises, prompt engineering activities, AI workflow audits, and learning progress completed as part of the **FlyRank AI Fluency Program**.
 
-The program focuses on building practical AI fluency through structured, project-based assignments. Throughout this repository, I document how I use AI as a thinking partner to improve technical communication, portfolio development, documentation, and engineering workflows.
+The repository documents my journey in building AI-assisted workflows, improving prompt engineering skills, and developing a professional portfolio through structured, project-based assignments.
 
 ---
 
 ## Repository Structure
 
 ```text
-flyrank-general-ai-fluency/
-│
-├── README.md
-│
-├── Week-1/
-│   ├── README.md
-│   ├── FL-01_AI-Workflow-Audit-and-Tool-Setup/
-│   ├── FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit/
-│   └── FL-03_What_Are_You_Proving/
-│
-├── Week-2/
-│   ├── README.md
-│   ├── 01_FL-04_Frame_It_As_Cases/
-│   ├── 02_FL-05_.../
-│   ├── 03_FL-06_.../
-│   └── 04_FL-07_.../
-│
-└── LICENSE
+Week-1
+├── FL-01_AI-Workflow-Audit-and-Tool-Setup
+├── FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit
+└── FL-03_What_Are_You_Proving
+
+Week-2
+├── 01_FL-04_Frame_It_As_Cases
+└── 02_FL-05_The_Prompt_Ladder
 ```
 
 ---
 
-# Weekly Progress
+## Completed Assignments
 
-## Week 1 – Foundations
+### Week 1
 
-| Assignment | Status |
-|------------|--------|
-| FL-01 – AI Workflow Audit and Tool Setup | ✅ Completed |
-| FL-02 – Draw the Path: Portfolio Sitemap & Toolkit | ✅ Completed |
-| FL-03 – What Are You Proving? | ✅ Completed |
+- ✅ FL-01 – AI Workflow Audit and Tool Setup
+- ✅ FL-02 – Draw the Path: Portfolio Sitemap + Toolkit
+- ✅ FL-03 – What Are You Proving?
 
-### Focus Areas
+### Week 2
 
-- AI Workflow Design
-- Portfolio Planning
-- Technical Communication
-- Prompt Engineering
-- Human-AI Collaboration
-
----
-
-## Week 2 – Foundations
-
-| Assignment | Status |
-|------------|--------|
-| FL-04 – Frame It as Cases | ✅ Completed |
-| FL-05 | ⏳ Coming Soon |
-| FL-06 | ⏳ Coming Soon |
-| FL-07 | ⏳ Coming Soon |
-
-### Focus Areas
-
-- Portfolio Storytelling
-- Case Study Writing
-- Documentation
-- AI Interviewing
-- Technical Communication
+- ✅ FL-04 – Frame It as Cases: Work That Speaks for Itself
+- ✅ FL-05 – The Prompt Ladder
 
 ---
 
 ## Skills Practiced
 
-- AI Workflow Planning
+- AI Workflow Design
 - Prompt Engineering
 - Portfolio Planning
 - Portfolio Storytelling
 - Technical Communication
-- Documentation
+- AI Output Evaluation
 - Critical Thinking
 - Human-AI Collaboration
 - Git & GitHub
@@ -91,27 +57,18 @@ flyrank-general-ai-fluency/
 - Anthropic Academy
 - Git
 - GitHub
-- Visual Studio Code
 
 ---
 
-## Learning Outcomes
+## Progress
 
-Through this program, I am learning how to:
-
-- Build effective AI-assisted workflows.
-- Use AI to improve technical thinking and documentation.
-- Communicate projects through structured case studies.
-- Create evidence-based portfolio content.
-- Organize projects using professional GitHub practices.
-- Apply Git and GitHub for version control and documentation.
-- Continuously improve my engineering workflow through structured assignments.
-
----
-
-## Repository Goals
-
-This repository serves as a record of my progress throughout the FlyRank AI Fluency Program. Each week's assignments build on the previous one, helping me strengthen AI collaboration, technical communication, documentation, and portfolio development through practical work.
+| Week | Assignment | Status |
+|------|------------|--------|
+| Week 1 | FL-01 – AI Workflow Audit and Tool Setup | ✅ Completed |
+| Week 1 | FL-02 – Draw the Path: Portfolio Sitemap + Toolkit | ✅ Completed |
+| Week 1 | FL-03 – What Are You Proving? | ✅ Completed |
+| Week 2 | FL-04 – Frame It as Cases: Work That Speaks for Itself | ✅ Completed |
+| Week 2 | FL-05 – The Prompt Ladder | ✅ Completed |
 
 ---
 
@@ -119,8 +76,4 @@ This repository serves as a record of my progress throughout the FlyRank AI Flue
 
 **Kanak Chaudhary**
 
-**BCA Student | Backend Developer | AI & Web Development Enthusiast**
-
----
-
-⭐ *This repository is continuously updated as I complete new assignments throughout the FlyRank General AI Fluency Program.*
+BCA Student | Backend Developer | AI & Web Development Enthusiast

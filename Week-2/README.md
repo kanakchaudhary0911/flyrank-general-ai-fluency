@@ -1,35 +1,47 @@
 # Week 2 – Foundations
 
-## Overview
-
-This folder contains my work completed during **Week 2** of the **FlyRank General AI Fluency Internship**.
-
-This week's assignments focus on improving how technical work is presented, communicated, and documented. Instead of simply showing completed projects, the goal is to explain the problem, engineering decisions, and outcomes through structured case studies and portfolio storytelling.
-
-Each assignment builds practical skills in technical communication, AI-assisted writing, documentation, and portfolio development.
+This folder contains my Week 2 assignments completed as part of the **FlyRank AI Fluency Program**. These assignments focus on portfolio storytelling and prompt engineering through structured AI-assisted workflows.
 
 ---
 
-## Assignments
+## Repository Structure
 
-| Assignment | Status | Description |
-|------------|--------|-------------|
-| FL-04 – Frame It as Cases | ✅ Completed | Created portfolio-ready case studies using AI-guided interviews and structured storytelling. |
-| FL-05 | ⏳ Coming Soon | — |
-| FL-06 | ⏳ Coming Soon | — |
-| FL-07 | ⏳ Coming Soon | — |
+```text
+Week-2
+│
+├── 01_FL-04_Frame_It_As_Cases
+│   ├── Drafts
+│   ├── Screenshots
+│   ├── FL-04_Frame_It_As_Cases.pdf
+│   └── README.md
+│
+└── 02_FL-05_The_Prompt_Ladder
+    ├── Prompt_Ladder.md
+    ├── Screenshots
+    ├── FL-05_The_Prompt_Ladder.pdf
+    └── README.md
+```
+
+---
+
+## Completed Assignments
+
+### Week 2
+
+- ✅ FL-04 – Frame It as Cases: Work That Speaks for Itself
+- ✅ FL-05 – The Prompt Ladder
 
 ---
 
 ## Skills Practiced
 
-- Technical Communication
 - Portfolio Storytelling
-- AI Prompt Engineering
-- Documentation
+- Case Study Writing
+- Prompt Engineering
+- AI Output Evaluation
+- Technical Communication
 - Critical Thinking
 - Human-AI Collaboration
-- Git & GitHub
 
 ---
 
@@ -39,44 +51,20 @@ Each assignment builds practical skills in technical communication, AI-assisted 
 - ChatGPT
 - Git
 - GitHub
-- Visual Studio Code
 
 ---
 
-## Learning Outcomes
+## Progress
 
-During Week 2, I learned how to:
-
-- Transform projects into portfolio-ready case studies.
-- Use AI as an interviewer instead of a content generator.
-- Explain technical decisions using structured storytelling.
-- Improve documentation while maintaining my own writing style.
-- Present projects in a way that clearly demonstrates technical thinking and real work.
+| Week | Assignment | Status |
+|------|------------|--------|
+| Week 2 | FL-04 – Frame It as Cases | ✅ Completed |
+| Week 2 | FL-05 – The Prompt Ladder | ✅ Completed |
 
 ---
 
-## Folder Structure
+## Author
 
-```text
-Week-2/
-│
-├── README.md
-│
-├── 01_FL-04_Frame_It_As_Cases/
-│   ├── README.md
-│   ├── FL-04_Frame_It_As_Cases.pdf
-│   ├── Drafts/
-│   └── Screenshots/
-│
-├── 02_FL-05_...
-│
-├── 03_FL-06_...
-│
-└── 04_FL-07_...
-```
+**Kanak Chaudhary**
 
----
-
-**FlyRank General AI Fluency Internship**
-
-**Week 2 – Foundations**
+BCA Student | Backend Developer | AI & Web Development Enthusiast
