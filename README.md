@@ -16,7 +16,8 @@ Week-1
 
 Week-2
 ├── 01_FL-04_Frame_It_As_Cases
-└── 02_FL-05_The_Prompt_Ladder
+├── 02_FL-05_The_Prompt_Ladder
+└── 03_FL-06_Prompting_Fundamentals_on_Real_Tasks
 ```
 
 ---
@@ -33,6 +34,7 @@ Week-2
 
 - ✅ FL-04 – Frame It as Cases: Work That Speaks for Itself
 - ✅ FL-05 – The Prompt Ladder
+- ✅ FL-06 – Prompting Fundamentals on Real Tasks
 
 ---
 
@@ -40,8 +42,11 @@ Week-2
 
 - AI Workflow Design
 - Prompt Engineering
+- Prompt Iteration
+- Cross-Model Evaluation
 - Portfolio Planning
 - Portfolio Storytelling
+- Technical Documentation
 - Technical Communication
 - AI Output Evaluation
 - Critical Thinking
@@ -69,6 +74,7 @@ Week-2
 | Week 1 | FL-03 – What Are You Proving? | ✅ Completed |
 | Week 2 | FL-04 – Frame It as Cases: Work That Speaks for Itself | ✅ Completed |
 | Week 2 | FL-05 – The Prompt Ladder | ✅ Completed |
+| Week 2 | FL-06 – Prompting Fundamentals on Real Tasks | ✅ Completed |
 
 ---
 

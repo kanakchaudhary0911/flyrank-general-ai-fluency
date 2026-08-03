@@ -1,6 +1,6 @@
-# Week 2 – Foundations
+# Week 2
 
-This folder contains my Week 2 assignments completed as part of the **FlyRank AI Fluency Program**. These assignments focus on portfolio storytelling and prompt engineering through structured AI-assisted workflows.
+This folder contains my Week 2 assignments completed as part of the **FlyRank AI Fluency Program**. The assignments focused on documenting real projects as case studies and improving prompt engineering skills through structured experimentation and comparison.
 
 ---
 
@@ -10,38 +10,43 @@ This folder contains my Week 2 assignments completed as part of the **FlyRank AI
 Week-2
 │
 ├── 01_FL-04_Frame_It_As_Cases
-│   ├── Drafts
-│   ├── Screenshots
+│   ├── README.md
 │   ├── FL-04_Frame_It_As_Cases.pdf
-│   └── README.md
+│   ├── Drafts/
+│   └── Screenshots/
 │
-└── 02_FL-05_The_Prompt_Ladder
-    ├── Prompt_Ladder.md
-    ├── Screenshots
-    ├── FL-05_The_Prompt_Ladder.pdf
-    └── README.md
+├── 02_FL-05_The_Prompt_Ladder
+│   ├── README.md
+│   ├── Prompt_Ladder.md
+│   ├── FL-05_The_Prompt_Ladder.pdf
+│   └── Screenshot/
+│
+└── 03_FL-06_Prompting_Fundamentals_on_Real_Tasks
+    ├── README.md
+    ├── Prompt_Iteration_Log.md
+    ├── FL-06_Prompting_Fundamentals_on_Real_Tasks.pdf
+    └── Screenshots/
 ```
 
 ---
 
 ## Completed Assignments
 
-### Week 2
-
-- ✅ FL-04 – Frame It as Cases: Work That Speaks for Itself
+- ✅ FL-04 – Frame It As Cases
 - ✅ FL-05 – The Prompt Ladder
+- ✅ FL-06 – Prompting Fundamentals on Real Tasks
 
 ---
 
 ## Skills Practiced
 
-- Portfolio Storytelling
+- Technical Documentation
 - Case Study Writing
 - Prompt Engineering
-- AI Output Evaluation
-- Technical Communication
-- Critical Thinking
-- Human-AI Collaboration
+- Prompt Iteration
+- Cross-Model Evaluation
+- AI-Assisted Development
+- Git & GitHub
 
 ---
 
@@ -58,13 +63,12 @@ Week-2
 
 | Week | Assignment | Status |
 |------|------------|--------|
-| Week 2 | FL-04 – Frame It as Cases | ✅ Completed |
+| Week 2 | FL-04 – Frame It As Cases | ✅ Completed |
 | Week 2 | FL-05 – The Prompt Ladder | ✅ Completed |
+| Week 2 | FL-06 – Prompting Fundamentals on Real Tasks | ✅ Completed |
 
 ---
 
-## Author
+## Status
 
-**Kanak Chaudhary**
-
-BCA Student | Backend Developer | AI & Web Development Enthusiast
+**Week 2 Completed ✅**
