@@ -24,6 +24,13 @@ Week-3
 │
 └── 03_FL-09_Kill_Your_Darlings_Curate_Your_Images
     ├── README.md
-    └── ...
-
-Week 3 In Progress 🚧
+    ├── rejected-images.md
+    ├── curation-decisions.md
+    └── images/
+        ├── 01-calculator-dark.png
+        ├── 02-calculator-light.png
+        ├── 03-portfolio-hero.png
+        ├── 04-portfolio-lower-section.png
+        ├── 05-ai-intern-hero.png
+        ├── 06-ai-intern-learning.png
+        └── 07-ai-intern-cta-footer.png

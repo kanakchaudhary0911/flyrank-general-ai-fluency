@@ -24,4 +24,27 @@ Week-3
 ├── 02_FL-08_Decide_Once_Build_Your_Identity_Kit
 └── 03_FL-09_Kill_Your_Darlings_Curate_Your_Images
 
-Week 3 In Progress 🚧
+---
+
+## Program Roadmap
+
+The FlyRank AI Fluency Program is an ongoing, structured learning journey.  
+Completed weeks are documented below, while upcoming weeks and assignments will be added progressively as the program continues.
+
+| Stage | Status |
+|-------|--------|
+| Week 1 | ✅ Completed |
+| Week 2 | ✅ Completed |
+| Week 3 | ✅ Completed |
+| Week 4+ | 🔄 Upcoming |
+
+> **Current Progress:** Weeks 1–3 completed.  
+> **Next:** Upcoming assignments and future weeks will be added to this repository as the program progresses.
+
+---
+
+## Repository Status
+
+🚀 **Program In Progress — More Weeks Coming Soon**
+
+This repository will continue to evolve with new assignments, experiments, portfolio improvements, AI workflows, and project-based learning activities throughout the program.
