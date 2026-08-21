@@ -23,6 +23,7 @@ Week-3
 ├── 01_FL-07_The_Through-Line_Content_Map
 ├── 02_FL-08_Decide_Once_Build_Your_Identity_Kit
 └── 03_FL-09_Kill_Your_Darlings_Curate_Your_Images
+├── 04_Consistency_Not_Talent
 
 ---
 
