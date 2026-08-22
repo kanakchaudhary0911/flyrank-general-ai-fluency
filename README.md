@@ -55,8 +55,8 @@ The FlyRank AI Fluency Program is an ongoing, structured learning journey. Compl
 | Week 05+ | ⏳ Upcoming |
 
 **Current Progress:** Weeks 01–03 completed, with Week 04 currently in progress.
-**Completed in Week 04:** FL-11 and FL-12.
-**Next:** FL-13 and FL-14.
+**Completed in Week 04:** FL-11, FL-12, and FL-13.
+**Next:** FL-14.
 
 ---
 
@@ -83,22 +83,64 @@ The deployed page was also opened on a phone to verify that it works outside the
 ---
 
 ### FL-13 — Ship an Automation Workflow v2
-**Status:** ⏳ Upcoming
+**Status:** ✅ Completed
+
+Built a repeatable AI-assisted writing workflow in Claude Projects using three main stages:
+
+```text
+Rough Input
+    ↓
+  Draft
+    ↓
+Critique
+    ↓
+Final Revision
+    ↓
+Human Check
+```
+
+The workflow was tested on five real inputs:
+
+1. Student Performance Analysis
+2. AI Internship Landing Page
+3. Why Database Design Matters
+4. Mentor Feedback Email
+5. SpellForge
+
+The workflow focused on:
+
+- Preserving factual accuracy
+- Avoiding unsupported claims
+- Improving clarity and structure
+- Maintaining appropriate tone
+- Identifying missing information
+- Producing revised final outputs
+- Clearly identifying human verification requirements
+
+The five-run retrospective also identified limitations such as over-structured drafts, mechanically repeated critique categories, and the continued need for human verification of project-specific details.
+
+**Time per run:** approximately 10–15 minutes.
 
 ---
 
 ### FL-14 — Agent Concepts and MCP Basics
 **Status:** ⏳ Upcoming
 
+This assignment will focus on understanding agent concepts and MCP fundamentals.
+
 ---
 
 ## Current Portfolio Milestone
 
-The portfolio has moved from planning to a live starting point. The selected stack is:
+The portfolio has moved from planning to a live starting point.
+
+The selected stack is:
 
 **Plain HTML / CSS / JavaScript + Netlify**
 
 A live portfolio URL now exists, while the identity kit, content map, case studies, and supporting portfolio materials have been prepared for the upcoming build phase.
+
+In addition, a repeatable AI-assisted writing workflow has been built and tested on five real inputs, providing a documented workflow for Draft → Critique → Revise tasks.
 
 The actual portfolio design, project evidence, screenshots, and functionality will be developed in later assignments.
 

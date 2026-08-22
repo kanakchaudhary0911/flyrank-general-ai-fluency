@@ -1,6 +1,6 @@
 # Week 04 — Build & Ship
 
-Week 04 focuses on moving from planning into execution: choosing a technical stack, shipping a first live version, and preparing the AI workspace for the portfolio build.
+Week 04 focuses on moving from planning into execution: choosing a technical stack, shipping a first live version, and building a repeatable AI-assisted workflow.
 
 ---
 
@@ -10,7 +10,7 @@ Week 04 focuses on moving from planning into execution: choosing a technical sta
 |---|---|---|
 | FL-11 | Three Roads: Choose Your Stack with AI | Completed |
 | FL-12 | Empty but Live: Ship a Blank Page | Completed |
-| FL-13 | Ship an Automation Workflow v2 | Upcoming |
+| FL-13 | Ship an Automation Workflow v2 | Completed |
 | FL-14 | Agent Concepts and MCP Basics | Upcoming |
 
 ---
@@ -93,22 +93,93 @@ The portfolio is intentionally near-blank at this stage. The actual portfolio de
 **Folder:**  
 `03_FL-13_Ship_an_Automation_Workflow_v2/`
 
-### Status
+### Objective
 
-**Upcoming**
+Build a repeatable AI-assisted writing workflow that takes a rough input through structured drafting, critique, revision, and human verification.
 
-This assignment will focus on building and shipping an improved automation workflow.
+### Workflow
+
+```text
+Rough Input
+    ↓
+STEP 1 — DRAFT
+    ↓
+STEP 2 — CRITIQUE
+    ↓
+STEP 3 — FINAL REVISION
+    ↓
+HUMAN CHECK
+
+## Workflow Design
+
+The workflow was built in Claude Projects with structured instructions defining three distinct stages:
+
+1. **Draft** — Transform the rough input into a structured first version.
+2. **Critique** — Review the draft for clarity, structure, relevance, accuracy, repetition, tone, and missing information.
+3. **Final Revision** — Apply the critique while preserving factual accuracy and avoiding unsupported claims.
+4. **Human Check** — Identify details that still require human verification before the output is used.
+
+---
+
+## Five Real Runs
+
+The workflow was tested on five real inputs:
+
+1. Student Performance Analysis
+2. AI Internship Landing Page
+3. Why Database Design Matters
+4. Mentor Feedback Email
+5. SpellForge
+
+---
+
+## What the Workflow Was Designed to Achieve
+
+- Preserve factual accuracy
+- Avoid inventing unsupported details
+- Improve clarity and structure
+- Maintain appropriate tone
+- Identify missing information
+- Produce a final revised version
+- Clearly identify what still requires human verification
+
+---
+
+## Workflow Retrospective
+
+The five-run review showed that the workflow consistently maintained the Draft → Critique → Revise handoff and avoided unsupported claims.
+
+It also revealed areas for improvement:
+
+- Drafts sometimes became more structured than necessary for short portfolio content.
+- Critique categories could be applied somewhat mechanically.
+- Missing information was not always prioritized by importance.
+- Human verification remained necessary for project-specific facts and placeholders.
+
+**Time per run:** approximately 10–15 minutes.
+
+**Human review remains necessary for:** factual accuracy, project-specific technical details, missing information, placeholders, and final suitability for the intended audience.
+
+---
+
+## Evidence
+
+- `Screenshots/01_claude_project.png`
+- `Screenshots/02_workflow_instructions.png`
+- `Screenshots/03_run_01.png`
+- `Screenshots/04_run_02.png`
+- `Screenshots/05_run_03.png`
+- `Screenshots/06_run_04.png`
+- `Screenshots/07_run_05.png`
+- `Screenshots/08_retrospective.png`
 
 ---
 
 ## FL-14 — Agent Concepts and MCP Basics
 
-**Folder:**  
-`04_FL-14_Agent_Concepts_and_MCP_Basics/`
+**Folder:** `04_FL-14_Agent_Concepts_and_MCP_Basics/`
 
-### Status
-
-**Upcoming**
+**Status:** ⏳ Upcoming
 
 This assignment will focus on understanding agent concepts and MCP fundamentals.
 
@@ -116,36 +187,14 @@ This assignment will focus on understanding agent concepts and MCP fundamentals.
 
 ## Week 04 Outcome
 
-By completing the current Week 04 assignments, the portfolio has moved from planning to a real deployed starting point.
+Week 04 focused on moving from planning to execution through three practical outcomes:
 
-The selected stack is:
+1. A technical stack was selected using AI-assisted comparison and pressure testing.
+2. A near-blank portfolio was shipped to a real public URL and verified on a phone.
+3. A repeatable AI-assisted writing workflow was built, tested on five real inputs, and reviewed for failure points and human-review requirements.
+
+The selected portfolio stack is:
 
 **Plain HTML / CSS / JavaScript + Netlify**
 
-A live portfolio URL now exists, and the supporting identity, content, and case-study materials have been prepared in the AI workspace for the next build phase.
-
----
-
-## Repository Structure
-
-```text
-Week-04/
-│
-├── 01_FL-11_Three_Roads_Choose_Your_Stack_with_AI/
-│   ├── AI_Three_Options.md
-│   ├── Pressure_Test.md
-│   ├── README.md
-│   └── Screenshots/
-│
-├── 02_FL-12_Empty_but_Live_Ship_a_Blank_Page/
-│   ├── screenshots/
-│   │   ├── 01_live_on_phone.jpeg
-│   │   └── 02_claude_project_context.png
-│   ├── index.html
-│   └── README.md
-│
-├── 03_FL-13_Ship_an_Automation_Workflow_v2/
-│
-├── 04_FL-14_Agent_Concepts_and_MCP_Basics/
-│
-└── README.md
+A live portfolio URL now exists, supporting identity and content materials have been prepared in the AI workspace, and a reusable Draft → Critique → Revise workflow has been documented.
