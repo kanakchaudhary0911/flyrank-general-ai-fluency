@@ -9,43 +9,103 @@ The repository documents my journey in building AI-assisted workflows, improving
 ## Repository Structure
 
 ```text
-Week-1
-├── FL-01_AI-Workflow-Audit-and-Tool-Setup
-├── FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit
-└── FL-03_What_Are_You_Proving
-
-Week-2
-├── 01_FL-04_Frame_It_As_Cases
-├── 02_FL-05_The_Prompt_Ladder
-└── 03_FL-06_Prompting_Fundamentals_on_Real_Tasks
-
-Week-3
-├── 01_FL-07_The_Through-Line_Content_Map
-├── 02_FL-08_Decide_Once_Build_Your_Identity_Kit
-└── 03_FL-09_Kill_Your_Darlings_Curate_Your_Images
-├── 04_Consistency_Not_Talent
+flyrank-general-ai-fluency/
+│
+├── Week-01/
+│   ├── 01_FL-01_AI-Workflow-Audit-and-Tool-Setup/
+│   ├── 02_FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit/
+│   ├── 03_FL-03_What_Are_You_Proving/
+│   └── README.md
+│
+├── Week-02/
+│   ├── 01_FL-04_Frame_It_As_Cases/
+│   ├── 02_FL-05_The_Prompt_Ladder/
+│   ├── 03_FL-06_Prompting_Fundamentals_on_Real_Tasks/
+│   └── README.md
+│
+├── Week-03/
+│   ├── 01_FL-07_The_Through-Line_Content_Map/
+│   ├── 02_FL-08_Decide_Once_Build_Your_Identity_Kit/
+│   ├── 03_FL-09_Kill_Your_Darlings_Curate_Your_Images/
+│   ├── 04_FL-10_Consistency_Not_Talent/
+│   └── README.md
+│
+├── Week-04/
+│   ├── 01_FL-11_Three_Roads_Choose_Your_Stack_with_AI/
+│   ├── 02_FL-12_Empty_but_Live_Ship_a_Blank_Page/
+│   ├── 03_FL-13_Ship_an_Automation_Workflow_v2/
+│   ├── 04_FL-14_Agent_Concepts_and_MCP_Basics/
+│   └── README.md
+│
+└── README.md
+```
 
 ---
 
 ## Program Roadmap
 
-The FlyRank AI Fluency Program is an ongoing, structured learning journey.  
-Completed weeks are documented below, while upcoming weeks and assignments will be added progressively as the program continues.
+The FlyRank AI Fluency Program is an ongoing, structured learning journey. Completed assignments are documented in their respective weekly folders, while upcoming assignments will be added progressively as the program continues.
 
 | Stage | Status |
 |-------|--------|
-| Week 1 | ✅ Completed |
-| Week 2 | ✅ Completed |
-| Week 3 | ✅ Completed |
-| Week 4+ | 🔄 Upcoming |
+| Week 01 | ✅ Completed |
+| Week 02 | ✅ Completed |
+| Week 03 | ✅ Completed |
+| Week 04 | 🔄 In Progress |
+| Week 05+ | ⏳ Upcoming |
 
-> **Current Progress:** Weeks 1–3 completed.  
-> **Next:** Upcoming assignments and future weeks will be added to this repository as the program progresses.
+**Current Progress:** Weeks 01–03 completed, with Week 04 currently in progress.
+**Completed in Week 04:** FL-11 and FL-12.
+**Next:** FL-13 and FL-14.
+
+---
+
+## Week 04 Progress
+
+### FL-11 — Three Roads: Choose Your Stack with AI
+**Status:** ✅ Completed
+
+Used AI to compare technical stack options, pressure-test the decision, and select a suitable stack for the portfolio build.
+
+**Chosen Stack:** Plain HTML / CSS / JavaScript → Netlify
+
+---
+
+### FL-12 — Empty but Live: Ship a Blank Page
+**Status:** ✅ Completed
+
+Created a near-blank portfolio project and deployed it to Netlify. The live portfolio is publicly reachable at:
+
+🔗 [https://vocal-paprenjak-435bb4.netlify.app/](https://vocal-paprenjak-435bb4.netlify.app/)
+
+The deployed page was also opened on a phone to verify that it works outside the development environment.
+
+---
+
+### FL-13 — Ship an Automation Workflow v2
+**Status:** ⏳ Upcoming
+
+---
+
+### FL-14 — Agent Concepts and MCP Basics
+**Status:** ⏳ Upcoming
+
+---
+
+## Current Portfolio Milestone
+
+The portfolio has moved from planning to a live starting point. The selected stack is:
+
+**Plain HTML / CSS / JavaScript + Netlify**
+
+A live portfolio URL now exists, while the identity kit, content map, case studies, and supporting portfolio materials have been prepared for the upcoming build phase.
+
+The actual portfolio design, project evidence, screenshots, and functionality will be developed in later assignments.
 
 ---
 
 ## Repository Status
 
-🚀 **Program In Progress — More Weeks Coming Soon**
+🚀 **Program In Progress — Week 04 Underway**
 
 This repository will continue to evolve with new assignments, experiments, portfolio improvements, AI workflows, and project-based learning activities throughout the program.
