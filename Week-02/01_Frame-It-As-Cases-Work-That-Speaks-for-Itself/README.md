@@ -1,4 +1,4 @@
-# FL-04: Frame It as Cases – Work That Speaks for Itself
+# Frame It as Cases – Work That Speaks for Itself
 
 ## Assignment Overview
 
@@ -18,12 +18,63 @@ Using AI as an interviewer rather than a writer, I documented my development pro
 
 ---
 
+## Deliverables
+
+- Voice Card
+- AI Interview Screenshots
+- FlyRank AI Engineering Portfolio Case Study
+- AI Internship Landing Page Case Study
+- Portfolio Bio
+- Contact / CTA
+- Before & After Writing Example
+
+---
+
+## Skills Practiced
+
+- Portfolio Storytelling
+- Technical Communication
+- AI Prompt Engineering
+- Documentation
+- Git & GitHub
+- Critical Thinking
+- Human-AI Collaboration
+
+---
+
+## Tools Used
+
+- Claude AI
+- ChatGPT
+- Git
+- GitHub
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+
+---
+
+## Learning Outcomes
+
+Through this assignment, I learned how to:
+
+- Turn real projects into portfolio-ready case studies.
+- Use AI as an interviewer to uncover project decisions and outcomes.
+- Communicate technical work through structured storytelling.
+- Replace generic AI-generated writing with clear, authentic language.
+- Present projects in a way that highlights both technical work and decision-making.
+
+---
+
 ## Projects Covered
 
 ### 1. FlyRank AI Engineering Portfolio
+
 A structured GitHub repository documenting weekly AI Fluency internship assignments, technical documentation, and portfolio development.
 
 ### 2. AI Internship Landing Page
+
 A responsive frontend landing page built using HTML, CSS, and JavaScript to present an AI internship program with a clean and user-friendly interface.
 
 ---
@@ -110,49 +161,6 @@ I'm a BCA student focused on frontend development, backend fundamentals, and AI-
 
 ---
 
-## Deliverables
+## Status
 
-- Voice Card
-- AI Interview Screenshots
-- FlyRank AI Engineering Portfolio Case Study
-- AI Internship Landing Page Case Study
-- Portfolio Bio
-- Contact / CTA
-- Before & After Writing Example
-
----
-
-## Skills Practiced
-
-- Portfolio Storytelling
-- Technical Communication
-- AI Prompt Engineering
-- Documentation
-- Git & GitHub
-- Critical Thinking
-- Human-AI Collaboration
-
----
-
-## Tools Used
-
-- Claude AI
-- ChatGPT
-- Git
-- GitHub
-- HTML5
-- CSS3
-- JavaScript
-- Visual Studio Code
-
----
-
-## Learning Outcomes
-
-Through this assignment, I learned how to:
-
-- Turn real projects into portfolio-ready case studies.
-- Use AI as an interviewer to uncover project decisions and outcomes.
-- Communicate technical work through structured storytelling.
-- Replace generic AI-generated writing with clear, authentic language.
-- Present projects in a way that highlights both technical work and decision-making.
+**Completed ✅**

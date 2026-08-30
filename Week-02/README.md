@@ -9,22 +9,22 @@ This folder contains my Week 2 assignments completed as part of the **FlyRank AI
 ```text
 Week-2
 │
-├── 01_FL-04_Frame_It_As_Cases
+├── 01_Frame_It_As_Cases
 │   ├── README.md
-│   ├── FL-04_Frame_It_As_Cases.pdf
+│   ├── Frame_It_As_Cases.pdf
 │   ├── Drafts/
 │   └── Screenshots/
 │
-├── 02_FL-05_The_Prompt_Ladder
+├── 02_The_Prompt_Ladder
 │   ├── README.md
 │   ├── Prompt_Ladder.md
-│   ├── FL-05_The_Prompt_Ladder.pdf
+│   ├── The_Prompt_Ladder.pdf
 │   └── Screenshot/
 │
-└── 03_FL-06_Prompting_Fundamentals_on_Real_Tasks
+└── 03_FL-02_Prompting_Fundamentals_on_Real_Tasks
     ├── README.md
     ├── Prompt_Iteration_Log.md
-    ├── FL-06_Prompting_Fundamentals_on_Real_Tasks.pdf
+    ├── Prompting_Fundamentals_on_Real_Tasks.pdf
     └── Screenshots/
 ```
 
@@ -63,9 +63,9 @@ Week-2
 
 | Week | Assignment | Status |
 |------|------------|--------|
-| Week 2 | FL-04 – Frame It As Cases | ✅ Completed |
-| Week 2 | FL-05 – The Prompt Ladder | ✅ Completed |
-| Week 2 | FL-06 – Prompting Fundamentals on Real Tasks | ✅ Completed |
+| Week 2 | Frame It As Cases | ✅ Completed |
+| Week 2 | The Prompt Ladder | ✅ Completed |
+| Week 2 | FL-02 – Prompting Fundamentals on Real Tasks | ✅ Completed |
 
 ---
 

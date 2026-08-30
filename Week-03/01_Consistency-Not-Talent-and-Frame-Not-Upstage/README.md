@@ -1,19 +1,73 @@
-# FL-07: The Through-Line — Map Content & CTAs
+# The Through-Line — Map Content & CTAs
 
-**Track:** General AI Fluency
-**Week:** 3
-**Phase:** Foundations
-**Workload:** 2h
+## Assignment Overview
 
-## Objective
+This assignment focused on mapping the portfolio content before building it. This included defining the one-line claim, target hiring person, primary action, page structure, case-study placement, calls to action, and the proof that still needs to be gathered.
 
-The purpose of this assignment is to map the portfolio content before building it. This includes defining the one-line claim, target hiring person, primary action, page structure, case-study placement, calls to action, and the proof that still needs to be gathered.
-
-This assignment builds on FL-03: **What Are You Proving**.
+This assignment builds on **What Are You Proving**.
 
 ---
 
-## 1. Portfolio Positioning
+## Objectives
+
+- Define the portfolio's primary technical claim.
+- Identify the target hiring person.
+- Define the primary portfolio action.
+- Map the content and page structure.
+- Decide where case studies should appear.
+- Define a clear CTA path through the portfolio.
+- Identify the proof and assets that still need to be gathered.
+
+---
+
+## Deliverables
+
+- One-Line Technical Claim
+- Target Hiring Person
+- Primary Portfolio Action
+- Portfolio Content Map
+- Page Sections and Ordering
+- Case-Study Placement
+- CTA Ladder
+- Still-Need-to-Gather Evidence List
+
+---
+
+## Skills Practiced
+
+- Portfolio Strategy
+- Information Architecture
+- Content Planning
+- Technical Communication
+- Portfolio Positioning
+- Evidence-Based Storytelling
+- AI-Assisted Planning
+
+---
+
+## Tools Used
+
+- Claude AI
+- ChatGPT
+- Git
+- GitHub
+
+---
+
+## Learning Outcomes
+
+Through this assignment, I learned how to:
+
+- Connect a portfolio's technical claim with its actual content.
+- Plan page structure before starting visual development.
+- Prioritize case studies based on the evidence they provide.
+- Design CTAs around an evidence-first portfolio journey.
+- Identify missing proof before presenting technical claims.
+- Maintain consistency between portfolio positioning and portfolio content.
+
+---
+
+## Portfolio Positioning
 
 ### Primary Technical Claim
 
@@ -31,15 +85,15 @@ The portfolio follows an **evidence-first** approach: show credible technical pr
 
 ---
 
-## 2. One-Line Claim
+## One-Line Claim
 
 > **I design data models that anticipate future features and make the engineering tradeoffs behind them explicit.**
 
-This is the portfolio-facing version of the positioning developed in FL-03. It keeps the claim specific to data modeling and engineering reasoning rather than using a generic developer statement.
+This is the portfolio-facing version of the positioning developed in **What Are You Proving**. It keeps the claim specific to data modeling and engineering reasoning rather than using a generic developer statement.
 
 ---
 
-## 3. Content Map
+## Content Map
 
 ### Home
 
@@ -123,7 +177,7 @@ This is the portfolio-facing version of the positioning developed in FL-03. It k
 
 ---
 
-## 4. Case-Study Priority
+## Case-Study Priority
 
 ### 1. SpellForge / Reikein
 
@@ -149,7 +203,7 @@ Used as secondary evidence after the strongest cases.
 
 ---
 
-## 5. CTA Ladder
+## CTA Ladder
 
 The portfolio follows an evidence-first path:
 
@@ -161,54 +215,54 @@ The case study and repository provide the proof first; outreach is the final act
 
 ---
 
-## 6. Still Need to Gather
+## Still Need to Gather
 
 The evidence list is intentionally honest so the portfolio build is not blocked by missing proof.
 
 ### SpellForge / Reikein — Highest Priority
 
-* [ ] Final database schema
-* [ ] Final ER diagram
-* [ ] README section explaining the XP History decision
-* [ ] Clear explanation of the normalization vs. query-simplicity trade-off
-* [ ] Clean database/design screenshots
-* [ ] Verified GitHub repository URL
-* [ ] Verified live demo URL, if available
-* [ ] Final case-study screenshots
+- [ ] Final database schema
+- [ ] Final ER diagram
+- [ ] README section explaining the XP History decision
+- [ ] Clear explanation of the normalization vs. query-simplicity trade-off
+- [ ] Clean database/design screenshots
+- [ ] Verified GitHub repository URL
+- [ ] Verified live demo URL, if available
+- [ ] Final case-study screenshots
 
 ### Other Portfolio Projects
 
-* [ ] AI Internship Landing Page screenshots
-* [ ] AI Internship Landing Page live demo URL
-* [ ] Verified repository URL
-* [ ] Student Performance Analysis screenshots
-* [ ] Verified repository URL
-* [ ] Screenshots for any additional selected projects
+- [ ] AI Internship Landing Page screenshots
+- [ ] AI Internship Landing Page live demo URL
+- [ ] Verified repository URL
+- [ ] Student Performance Analysis screenshots
+- [ ] Verified repository URL
+- [ ] Screenshots for any additional selected projects
 
 ### Portfolio Assets
 
-* [ ] Final resume PDF
-* [ ] Verified LinkedIn URL
-* [ ] Verified GitHub profile URL
-* [ ] Final contact details
-* [ ] Professional profile photo, if used
+- [ ] Final resume PDF
+- [ ] Verified LinkedIn URL
+- [ ] Verified GitHub profile URL
+- [ ] Final contact details
+- [ ] Professional profile photo, if used
 
 ### Evidence Rules
 
-* [ ] Do not invent performance numbers.
-* [ ] Do not invent testimonials.
-* [ ] Do not present unfinished work as finished.
-* [ ] Prefer real screenshots and real repository/demo links over generated substitutes.
+- [ ] Do not invent performance numbers.
+- [ ] Do not invent testimonials.
+- [ ] Do not present unfinished work as finished.
+- [ ] Prefer real screenshots and real repository/demo links over generated substitutes.
 
 ---
 
-## 7. FL-03 → FL-07 Connection
+## Connection to What Are You Proving
 
-FL-03 answered:
+**What Are You Proving** answered:
 
 > **What am I proving?**
 
-FL-07 answers:
+**The Through-Line — Map Content & CTAs** answers:
 
 > **Where and how will I prove it?**
 
@@ -220,14 +274,20 @@ The same technical claim, target hiring person, and evidence-first action should
 
 This assignment contains:
 
-* One-line claim
-* Target hiring person
-* Primary action
-* Content map
-* Page sections in order
-* Case-study placement
-* Page-level CTAs
-* CTA ladder
-* Still-need-to-gather list
+- One-line claim
+- Target hiring person
+- Primary action
+- Content map
+- Page sections in order
+- Case-study placement
+- Page-level CTAs
+- CTA ladder
+- Still-need-to-gather list
 
 The goal is to have a clear content structure before moving to the visual identity and image-curation assignments in Week 3.
+
+---
+
+## Status
+
+**Completed ✅**

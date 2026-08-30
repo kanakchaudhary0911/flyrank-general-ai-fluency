@@ -1,4 +1,4 @@
-# FL-03: What Are You Proving?
+# What Are You Proving?
 
 ## Assignment Overview
 
@@ -63,10 +63,10 @@ Through this assignment, I learned how to:
 ## Repository Structure
 
 ```text
-FL-03_What_Are_You_Proving
+What-Are-You-Proving
 │
 ├── README.md
-├── FL-03_What_Are_You_Proving.pdf
+├── What_Are_You_Proving.pdf
 └── Screenshots
     ├── 01_Interview_Prompt.png
     ├── 02_Technical_Evidence_Interview_Q1.png
@@ -81,4 +81,4 @@ FL-03_What_Are_You_Proving
 
 ## Status
 
-**Completed ✅**
+✅ Completed

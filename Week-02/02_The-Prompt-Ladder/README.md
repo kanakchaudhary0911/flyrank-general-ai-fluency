@@ -1,4 +1,4 @@
-# FL-05: The Prompt Ladder
+# The Prompt Ladder
 
 ## Assignment Overview
 
@@ -63,10 +63,10 @@ Through this assignment, I learned how to:
 ## Repository Structure
 
 ```text
-FL-05_The_Prompt_Ladder
+The-Prompt-Ladder
 │
 ├── README.md
-├── FL-05_The_Prompt_Ladder.pdf
+├── The_Prompt_Ladder.pdf
 ├── Prompt_Ladder.md
 └── Screenshots
     ├── 01_Baseline_Weak_Prompt.png
@@ -82,4 +82,4 @@ FL-05_The_Prompt_Ladder
 
 ## Status
 
-**Completed ✅**
+✅ Completed

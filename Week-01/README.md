@@ -13,8 +13,8 @@ The focus of this week was to build a strong foundation for AI-assisted work by 
 | Assignment | Status | Description |
 |------------|--------|-------------|
 | FL-01 – AI Workflow Audit and Tool Setup | ✅ Completed | Audited my workflow, configured AI tools, and established an AI-assisted development process. |
-| FL-02 – Draw the Path: Portfolio Sitemap & Toolkit | ✅ Completed | Planned the portfolio structure, defined the target audience, and created a portfolio sitemap. |
-| FL-03 – What Are You Proving? | ✅ Completed | Defined a clear technical claim, validated it through AI-guided interviews, and created an evidence-based proof statement. |
+| Draw the Path: Portfolio Sitemap & Toolkit | ✅ Completed | Planned the portfolio structure, defined the target audience, and created a portfolio sitemap. |
+| What Are You Proving? | ✅ Completed | Defined a clear technical claim, validated it through AI-guided interviews, and created an evidence-based proof statement. |
 
 ---
 
@@ -69,18 +69,16 @@ Week-1/
 │   ├── Anthropic_Academy_Enrollment.png
 │   └── Claude_Project_Configuration.png
 │
-├── FL-02_Draw_The_Path_Portfolio_Sitemap_Toolkit/
+├── Draw_The_Path_Portfolio_Sitemap_Toolkit/
 │   ├── README.md
-│   ├── FL-02_Portfolio_Sitemap_Kanak_Chaudhary.pdf
+│   ├── Portfolio_Sitemap_Kanak_Chaudhary.pdf
 │   └── Screenshots/
 │
-├── FL-03_What_Are_You_Proving/
+├── What_Are_You_Proving/
 │   ├── README.md
-│   ├── FL-03_What_Are_You_Proving.pdf
+│   ├── What_Are_You_Proving.pdf
 │   └── Screenshots/
-│
-└── Assets/
-    └── (Optional future resources)
+
 ```
 
 ---

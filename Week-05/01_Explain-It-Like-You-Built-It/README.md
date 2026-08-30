@@ -1,6 +1,6 @@
 # Explain It Like You Built It
 
-## Overview
+## Assignment Overview
 
 This assignment focused on understanding one real piece of my own build instead of treating AI-generated code as something I could use without understanding.
 
@@ -8,17 +8,29 @@ For this assignment, I chose the **`analyzeWebsiteTool`** from my **FE-07 — To
 
 ---
 
+## Objectives
+
+- Choose one real piece of code from my own project.
+- Understand what the selected code does.
+- Explain how the selected component connects to the AI.
+- Understand how tool input is validated.
+- Identify where the actual execution logic happens.
+- Explain the complete flow from user request to structured tool result.
+- Build enough understanding to explain the implementation without treating it as mystery code.
+
+---
+
 ## 1. The Part I Chose
 
-The part I chose is the `analyzeWebsiteTool` defined in my server-side chat route.
+The part I chose is the **`analyzeWebsiteTool`** defined in my server-side chat route.
 
 The tool is responsible for analyzing a public website and returning basic information such as:
 
-* Website URL
-* Page title
-* Meta description
-* HTTP status
-* Word count
+- Website URL
+- Page title
+- Meta description
+- HTTP status
+- Word count
 
 The important part of the implementation is:
 
@@ -60,19 +72,7 @@ inputSchema: z.object({
 
 This tells the application that the tool expects a `url` as input and that it should be a valid URL.
 
-For example, a value such as:
-
-```text
-https://example.com
-```
-
-matches the expected format, while an invalid value such as:
-
-```text
-hello
-```
-
-does not.
+For example, `https://example.com` matches the expected format, while `hello` does not.
 
 I learned that the schema is important because it gives the tool a clear contract for the data it expects before the execution logic runs.
 
@@ -108,55 +108,114 @@ The function then returns the information as a structured object.
 
 ---
 
-## 5. The Complete Flow
+## 5. Complete Execution Flow
 
-The way I understand the complete process now is:
+The complete process can be understood as:
 
-**User request → AI decides to use the tool → input is validated → `execute()` runs → website is fetched → information is extracted → structured result is returned.**
+```text
+User request
+     ↓
+AI decides to use the tool
+     ↓
+Input is validated
+     ↓
+execute() runs
+     ↓
+Website is fetched
+     ↓
+Information is extracted
+     ↓
+Structured result is returned
+```
 
-The AI does not magically know the website's current contents. The tool provides the capability and the `execute()` function contains the code that actually accesses and analyzes the website.
+The AI does not automatically know the website's current contents.
+
+The tool provides the capability, while the `execute()` function contains the code that actually accesses and analyzes the website.
 
 ---
 
 ## 6. What I Learned
 
-Before working through this, I understood that my project had a website-analysis tool, but I did not fully understand the difference between defining a tool and executing it.
+Before working through this assignment, I understood that my project had a website-analysis tool, but I did not fully understand the difference between defining a tool and executing it.
 
 Now I understand that:
 
-* **`tool()`** defines the AI's available capability.
-* **`inputSchema`** defines and validates the expected input.
-* **`execute()`** contains the actual logic.
-* **`fetch()`** is what my code uses to retrieve the website.
-* The returned object gives the application structured information about the website.
+- `tool()` defines the AI's available capability.
+- `inputSchema` defines and validates the expected input.
+- `execute()` contains the actual logic.
+- `fetch()` is what my code uses to retrieve the website.
+- The returned object gives the application structured information about the website.
 
-The biggest thing I learned is that the AI is not doing all of the work by itself. **I provide the tool and the code behind it, while the AI can decide when that capability is useful.**
+The biggest thing I learned is that the AI is not doing all of the work by itself.
 
-Understanding this made me more confident that I can explain the FE-07 implementation instead of just saying that I built a tool that works.
+I provide the tool and the code behind it, while the AI can decide when that capability is useful.
 
----
-
-## Tools Used
-
-* Next.js
-* TypeScript
-* Vercel AI SDK
-* Zod
-* Google Gemini
-* `fetch()`
+Understanding this made me more confident that I can explain the FE-07 implementation instead of simply saying that I built a tool that works.
 
 ---
 
 ## Project Reference
 
-**Project:** FE-07 — Tool Results Structured Output
-
-**Real implementation:** `app/api/chat/route.ts`
-
-**Piece explained:** `analyzeWebsiteTool`
+| Field | Details |
+|---|---|
+| Project | FE-07 — Tool Results Structured Output |
+| Implementation | `app/api/chat/route.ts` |
+| Piece Explained | `analyzeWebsiteTool` |
 
 ---
 
-## Outcome
+## Skills Practiced
 
-This assignment helped me understand one of the important pieces of my own AI application at the code level. I can now explain how my website analysis tool receives input, validates it, executes the analysis, and returns structured information instead of treating the implementation as mystery code.
+- Code Understanding
+- AI Tool Concepts
+- TypeScript
+- Server-Side Development
+- Input Validation
+- Structured Output
+- Technical Communication
+- Human-AI Collaboration
+
+---
+
+## Tools Used
+
+- Next.js
+- TypeScript
+- Vercel AI SDK
+- Zod
+- Google Gemini
+- `fetch()`
+
+---
+
+## Learning Outcomes
+
+Through this assignment, I learned how to:
+
+- Understand a real implementation from my own project.
+- Explain the purpose of an AI tool.
+- Understand the role of `tool()`, `inputSchema`, and `execute()`.
+- Explain how input validation works with Zod.
+- Understand how `fetch()` retrieves website content.
+- Explain how website information is extracted and returned as structured data.
+- Trace the complete flow from user request to tool result.
+- Explain the implementation without relying only on AI-generated explanations.
+
+---
+
+## Repository Structure
+
+```text
+FE-07_Tool-Results-Structured-Output
+│
+└── app
+    └── api
+        └── chat
+            └── route.ts
+```
+
+---
+
+## Status
+
+✅ Completed
