@@ -11,7 +11,7 @@ https://vocal-paprenjak-435bb4.netlify.app/
 ## Project Structure
 
 - `index.html` — near-blank portfolio homepage
-- `screenshots/01_live_on_phone.png` — proof that the deployed site was opened on a phone
+- `screenshots/01_live_on_phone.jpeg` — proof that the deployed site was opened on a phone
 
 ## Deployment
 
@@ -25,7 +25,7 @@ I opened the deployed URL on my phone to confirm that the site is publicly reach
 
 Screenshot:
 
-`screenshots/01_live_on_phone.png`
+`screenshots/01_live_on_phone.jpeg`
 
 ## AI Workspace Preparation
 
@@ -62,5 +62,5 @@ The next build phase will add the actual portfolio pages, content, project evide
 
 ## Evidence
 
-- `screenshots/01_live_on_phone.png` — live portfolio opened on a phone
+- `screenshots/01_live_on_phone.jpeg` — live portfolio opened on a phone
 - `index.html` — near-blank live portfolio homepage
