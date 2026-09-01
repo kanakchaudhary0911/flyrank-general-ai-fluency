@@ -59,22 +59,22 @@ During Week 1, I learned how to:
 ## Folder Structure
 
 ```text
-Week-1/
+Week-01/
 │
 ├── README.md
 │
-├── FL-01_AI-Workflow-Audit-and-Tool-Setup/
+├── 01_FL-01_AI-Workflow-Audit-and-Tool-Setup/
 │   ├── README.md
 │   ├── AI_Workflow_Audit.pdf
 │   ├── Anthropic_Academy_Enrollment.png
 │   └── Claude_Project_Configuration.png
 │
-├── Draw_The_Path_Portfolio_Sitemap_Toolkit/
+├── 02_Draw-The-Path-Portfolio-Sitemap-Toolkit/
 │   ├── README.md
 │   ├── Portfolio_Sitemap_Kanak_Chaudhary.pdf
 │   └── Screenshots/
 │
-├── What_Are_You_Proving/
+├── 03_What-Are-You-Proving/
 │   ├── README.md
 │   ├── What_Are_You_Proving.pdf
 │   └── Screenshots/

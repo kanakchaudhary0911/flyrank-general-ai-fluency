@@ -7,25 +7,10 @@ This folder contains my Week 2 assignments completed as part of the **FlyRank AI
 ## Repository Structure
 
 ```text
-Week-2
-│
-├── 01_Frame_It_As_Cases
-│   ├── README.md
-│   ├── Frame_It_As_Cases.pdf
-│   ├── Drafts/
-│   └── Screenshots/
-│
-├── 02_The_Prompt_Ladder
-│   ├── README.md
-│   ├── Prompt_Ladder.md
-│   ├── The_Prompt_Ladder.pdf
-│   └── Screenshot/
-│
-└── 03_FL-02_Prompting_Fundamentals_on_Real_Tasks
-    ├── README.md
-    ├── Prompt_Iteration_Log.md
-    ├── Prompting_Fundamentals_on_Real_Tasks.pdf
-    └── Screenshots/
+Week-02/
+├── 01_Frame-It-As-Cases-Work-That-Speaks-for-Itself/
+├── 02_The-Prompt-Ladder/
+└── 03_FL-02_Prompting-Fundamentals-on-Real-Tasks-v2/
 ```
 
 ---

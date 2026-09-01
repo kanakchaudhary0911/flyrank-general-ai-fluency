@@ -1,4 +1,4 @@
-# The Through-Line — Map Content & CTAs
+# Consistency, Not Talent (and Frame, Not Upstage)
 
 ## Assignment Overview
 
