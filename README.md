@@ -2,7 +2,7 @@
 
 This repository contains my work for the **FlyRank General AI Fluency Program**.
 
-The repository documents my progression through AI-assisted workflows, portfolio strategy, prompt engineering, identity and content systems, agent concepts, MCP, personal-agent design, agent implementation, and portfolio development.
+The repository documents my progression through AI-assisted workflows, portfolio strategy, prompt engineering, identity and content systems, agent concepts, MCP, personal-agent design, agent implementation, frontend AI engineering, and portfolio development.
 
 ---
 
@@ -34,6 +34,7 @@ flyrank-general-ai-fluency/
 │   ├── 03_FL-07_Build-the-Agent/
 │   └── 04_PF-04_Personal-Website-Live-on-FlyRank-Domain/
 ├── Week-06/
+│   ├── 01_Make-It-Do-Something/
 │   └── FL_CAP_Impact_Project/
 ├── CLAUDE.md
 └── README.md
@@ -45,15 +46,15 @@ flyrank-general-ai-fluency/
 
 | Week | Status |
 |---|---|
-| Week 01 | Completed |
-| Week 02 | Completed |
-| Week 03 | Completed |
-| Week 04 | Completed |
-| Week 05 | Completed |
-| Week 06 | Completed / Capstone |
-| Future Weeks | Upcoming |
+| Week 01 | ✅ Completed |
+| Week 02 | ✅ Completed |
+| Week 03 | ✅ Completed |
+| Week 04 | ✅ Completed |
+| Week 05 | ✅ Completed |
+| Week 06 | ⏳ In Progress |
+| Future Weeks | ⏳ Upcoming |
 
-The repository will continue to be updated as new FlyRank assignments, projects, experiments, and capstone work are completed.
+Week 06 is currently in progress. The Personal Portfolio project has been built and deployed, while the Impact Project and final Week 06 deliverables are still being finalized.
 
 ---
 
@@ -223,11 +224,70 @@ The website uses a minimal, calm, modern, and professional visual direction base
 
 ---
 
-## Week 06 — General AI Fluency Impact Project
+## Week 06 — Make It Do Something & Impact Project
 
-The Week 06 General AI Fluency Impact Project focuses on applying the learning from the program into a repeatable process for creating and improving portfolio evidence.
+Week 06 focuses on moving from portfolio presentation toward functional, demonstrable work and building a repeatable process for turning completed work into portfolio evidence.
 
-The project builds on the workflows, portfolio systems, agent concepts, and AI-assisted development practices established throughout Weeks 1–5.
+The week currently contains two assignments:
+
+### 01 — Make It Do Something
+
+**Personal Portfolio Project**
+
+The portfolio was developed into a functional React + Vite website with a real interactive feature rather than remaining a static portfolio page.
+
+Key work included:
+
+- Personal portfolio development
+- React + Vite implementation
+- Responsive interface
+- Portfolio sections for projects, skills, experience, education, and contact
+- Charcoal + Powder visual theme
+- Functional contact form
+- Client-side form validation
+- Loading, success, validation-error, and submission-error states
+- Form submission through Formspree
+- Live Vercel deployment
+- Production testing
+- Evidence capture
+
+The contact form was verified on the live deployed website through a successful submission that reached the configured Formspree inbox.
+
+**Live Website:** 🔗 [https://01-make-it-do-something.vercel.app](https://01-make-it-do-something.vercel.app)
+
+The project also includes workflow and implementation documentation explaining the development process, validation logic, form lifecycle, deployment, and backend concept.
+
+### 02 — FL_CAP_Impact_Project
+
+**General AI Fluency · Impact Project**
+
+The Impact Project establishes a repeatable process for turning future completed work into strong portfolio case studies.
+
+The case-study structure follows the three-beat format developed earlier in the program:
+
+**Problem → What I Did → What Came of It**
+
+The process includes:
+
+1. Finish and test the project
+2. Identify the main problem or need
+3. Document what was built and how
+4. Explain what came from the work
+5. Add screenshots, demo links, and supporting evidence
+6. Add the case study to the portfolio
+7. Review the case study using the existing portfolio context
+8. Check links, evidence, clarity, and recruiter readability
+
+The project also preserves the existing Kanak Portfolio Build Claude Project as part of the established portfolio context.
+
+Current Week 06 Impact Project work includes:
+
+- Case-study workflow
+- Evidence checklist
+- Reminder evidence
+- Existing Claude Project context
+- Submission notes
+- Preparation for adding the next portfolio case study
 
 ---
 
@@ -251,6 +311,9 @@ The project builds on the workflows, portfolio systems, agent concepts, and AI-a
 - CSS
 - JavaScript
 - React.js
+- Vite
+- Formspree
+- Vercel
 - Netlify
 
 **Development Workflow**
@@ -270,12 +333,13 @@ The project builds on the workflows, portfolio systems, agent concepts, and AI-a
 - Do not claim work or evidence that is not actually present.
 - Document important implementation decisions and learning outcomes.
 - Use AI to accelerate development while maintaining understanding and human control.
+- Keep project status accurate and distinguish completed work from work still in progress.
 
 ---
 
 ## Program Outcome
 
-The FlyRank General AI Fluency program has progressed from foundational AI workflows and portfolio strategy toward practical AI-assisted engineering and agent development.
+The FlyRank General AI Fluency program has progressed from foundational AI workflows and portfolio strategy toward practical AI-assisted engineering, agent development, and functional portfolio work.
 
 The progression can be summarized as:
 
@@ -298,9 +362,19 @@ Agent Implementation & Evaluation
         ↓
 Portfolio Development
         ↓
+Functional Portfolio Features
+        ↓
 Impact Project
 ```
 
 The main principle throughout the program is:
 
 > Use AI to accelerate development, but understand the system well enough to explain, evaluate, and improve it yourself.
+
+---
+
+## Week 06 Status
+
+⏳ **In Progress**
+
+Week 06 is not yet complete. The portfolio project has been implemented, deployed, and functionally tested, while the remaining Impact Project work and final Week 06 deliverables are still being completed.
