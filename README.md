@@ -43,8 +43,6 @@ flyrank-general-ai-fluency/
 
 ## Progress
 
-## Progress
-
 | Week | Status |
 |---|---|
 | Week 01 | Completed |
