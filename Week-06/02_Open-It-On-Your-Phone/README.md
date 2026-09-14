@@ -33,7 +33,7 @@ The audit focused on:
 
 ## Live Website
 
-**Production URL:** 🔗 `ADD_UPDATED_VERCEL_URL_HERE`
+**Production URL:** 🔗 `https://02open-it-on-your-phone-two.vercel.app/`
 
 The updated portfolio is intended to be publicly accessible over HTTPS through Vercel.
 
