@@ -4,272 +4,354 @@
 
 A structured hardening pass for my personal portfolio website.
 
-The goal of this assignment was to intentionally test my own site, identify where it could break, fix the actionable issues, document known limitations, and verify the final deployed version.
+The goal of this assignment was to intentionally test my own site, identify where it could break, fix actionable issues, document known limitations, complete a structured hardening review, and verify the final deployed version.
 
 ---
 
 ## Live Website
 
-```text
-https://03-survive-the-crit.vercel.app/
-1. Assignment Objective
+🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+
+---
+
+## Assignment Objective
 
 The objective of Week 07 was to test the portfolio from a real user's perspective instead of only checking whether the code worked during development.
 
 The hardening pass covered:
 
-Intentionally testing unexpected inputs
-Testing empty and invalid form submissions
-Testing rapid/double submission
-Testing browser/device behaviour
-Testing mobile responsiveness
-Testing navigation and CTA links
-Testing footer links
-Checking project links
-Checking basic SEO metadata
-Checking Open Graph metadata
-Checking Twitter/X metadata
-Checking search findability
-Checking desktop and mobile performance
-Classifying findings into fix-now issues and known limitations
-Fixing the actionable issues
-Preparing the site for hardening review
-2. Project
+- Intentionally testing unexpected inputs
+- Testing empty and invalid form submissions
+- Testing valid form submission
+- Testing actual email delivery
+- Testing rapid/double submission
+- Testing browser/device behaviour
+- Testing mobile responsiveness
+- Checking mobile horizontal scrolling
+- Testing navigation and CTA links
+- Testing footer links
+- Checking project links
+- Testing keyboard focus and accessibility
+- Checking basic SEO metadata
+- Checking Open Graph metadata
+- Checking Twitter/X metadata
+- Checking search findability
+- Checking desktop and mobile performance
+- Classifying findings into fix-now issues and known limitations
+- Fixing actionable issues
+- Completing a structured peer hardening review
+- Verifying the final production deployment
+
+---
+
+## Project
 
 The website is a personal portfolio focused on:
 
-Backend Development
-Data Modeling
-AI-Assisted Engineering
-Web Development
-Data Analytics
+- Backend Development
+- Data Modeling
+- AI-Assisted Engineering
+- Web Development
+- Data Analytics
 
 The portfolio includes:
 
-About
-Skills
-Experience
-Projects
-Education
-Contact
+- About
+- Skills
+- Experience
+- Projects
+- Education
+- Contact
 
-The Contact section contains a form with validation and a success state.
+The Contact section contains a form with validation, loading, success and error handling.
 
-3. Hardening Workflow
+---
+
+## Hardening Workflow
 
 The testing process followed this workflow:
 
+```text
 Test
   ↓
 Observe
   ↓
-Record finding
+Record Finding
   ↓
 Classify
   ↓
-Fix if actionable
+Fix if Actionable
+  ↓
+Rebuild
+  ↓
+Redeploy
   ↓
 Retest
   ↓
+Hardening Review
+  ↓
+SEO & Performance Check
+  ↓
 Document
+```
 
 The goal was to find real issues rather than only collect successful test results.
 
-4. Testing Completed
+---
 
-The following tests were performed during the hardening pass.
+## Testing Completed
 
-Test	Evidence	Result
-Empty form submission	01-empty-form.png	PASS
-Garbage / invalid input	02-garbage-input.png	PASS
-Rapid/double submission	03-double-submit.png	PASS
-Browser/device test	04-browser-test.png	PASS
-Mobile test	05-mobile-test.png	PASS
-Navigation	06-navigation.png	PASS
-CTA links	07-cta-links.png	PASS
-Footer links	08-footer-links.png	PASS
-Project links	09-project-links.png	Known limitation
-SEO meta tags	10-seo-meta-tags.png	PASS
-Open Graph before fix	11-og-tags-missing.png	Finding
-Open Graph after fix	12-seo-og-tags-fixed.png	FIXED
-Twitter/X metadata after fix	13-seo-twitter-tags-fixed.png	FIXED
-Mobile PageSpeed	14-pagespeed-mobile.png	PASS
-Desktop PageSpeed	15-pagespeed-desktop.png	PASS
-Google search findability	16-search-findability-google.png	PASS
-5. Form Testing
-Empty Form
+| Test | Evidence | Result |
+|---|---|---|
+| Empty form submission | `01-empty-form.png` | PASS |
+| Garbage / invalid input | `02-garbage-input.png` | PASS |
+| Rapid/double submission | `03-double-submit.png` | PASS |
+| Browser/device test | `04-browser-test.png` | PASS |
+| Mobile test | `05-mobile-test.png` | PASS |
+| Navigation | `06-navigation.png` | PASS |
+| CTA links | `07-cta-links.png` | PASS |
+| Footer links | `08-footer-links.png` | PASS |
+| Project links | `09-project-links.png` | Known Limitation |
+| SEO meta tags | `10-seo-meta-tags.png` | PASS |
+| Open Graph before fix | `11-og-tags-missing.png` | Finding |
+| Open Graph after fix | `12-seo-og-tags-fixed.png` | FIXED |
+| Twitter/X metadata | `13-seo-twitter-tags-fixed.png` | FIXED |
+| Mobile PageSpeed | `14-pagespeed-mobile.png` | PASS |
+| Desktop PageSpeed | `15-pagespeed-desktop.png` | PASS |
+| Google search findability | `16-search-findability-google.png` | PASS |
+| Peer hardening review | `17-hardening-review-peer-feedback.png` | COMPLETE |
+| Mobile horizontal-scroll check | `18-mobile-horizontal-scroll-check.png` | PASS |
+| Contact-form success | `19-contact-form-submission-success.png` | PASS |
+| Email delivery | `20-contact-form-email-received.png` | PASS |
+| Keyboard focus/accessibility | `21-keyboard-focus-accessibility.png` | PASS |
+
+---
+
+## Form Testing
+
+### Empty Form
 
 The contact form was submitted without entering the required information.
 
-Result
+**Expected:** The form should prevent submission and display validation feedback.
 
-Validation feedback was displayed correctly.
+**Result:** Validation feedback was displayed correctly.
 
-Status
+**Status:** ✅ PASS
 
-PASS
+**Evidence:** `evidence/01-empty-form.png`
 
-Evidence:
+---
 
-evidence/01-empty-form.png
-Garbage / Invalid Input
+### Garbage / Invalid Input
 
-Invalid information was entered into the form.
+Invalid information was entered into the form, including an invalid email format.
 
-Result
+**Expected:** The form should reject invalid input and provide feedback.
 
-The form correctly handled invalid input, including invalid email formatting.
+**Result:** Invalid email validation appeared correctly.
 
-Status
+**Status:** ✅ PASS
 
-PASS
+**Evidence:** `evidence/02-garbage-input.png`
 
-Evidence:
+---
 
-evidence/02-garbage-input.png
-Rapid / Double Submission
+### Valid Submission
 
-The form was tested with a rapid/double submission attempt.
+The form was submitted with valid information.
 
-Result
+**Expected:** The form should accept the submission and show a success state.
 
-The form behaviour was checked for unintended duplicate submission behaviour.
+**Result:** The success state appeared correctly.
 
-Status
+**Status:** ✅ PASS
 
-PASS
+**Evidence:** `evidence/19-contact-form-submission-success.png`
 
-Evidence:
+---
 
-evidence/03-double-submit.png
-6. Browser and Device Testing
+### Email Delivery
+
+The successful form submission was verified through the Formspree email workflow.
+
+**Expected:** A successful form submission should result in the message being received by email.
+
+**Result:** The Formspree notification email was received successfully.
+
+**Status:** ✅ PASS
+
+**Evidence:** `evidence/20-contact-form-email-received.png`
+
+---
+
+### Rapid / Double Submission
+
+The form was tested with rapid repeated submission.
+
+**Expected:** Rapid repeated clicks should not create unintended duplicate submissions.
+
+**Result:** The submission lock prevented duplicate submission behaviour.
+
+**Status:** ✅ PASS
+
+**Evidence:** `evidence/03-double-submit.png`
+
+---
+
+## Browser and Device Testing
 
 The portfolio was tested under different browser/device conditions.
 
-Result
+**Result:** The tested site remained functional during the browser/device checks.
 
-The tested site remained functional during the browser/device checks.
+**Status:** ✅ PASS
 
-Status
+**Evidence:** `evidence/04-browser-test.png`
 
-PASS
+---
 
-Evidence:
-
-evidence/04-browser-test.png
-7. Mobile Testing
+## Mobile Testing
 
 The portfolio was checked on a mobile/responsive layout.
 
-Result
+**Expected:**
 
-The main content remained usable and accessible.
+- No major layout break
+- No content overlap
+- Usable navigation
+- Readable content
 
-Status
+**Result:** The main content remained usable.
 
-PASS
+**Status:** ✅ PASS
 
-Evidence:
+**Evidence:** `evidence/05-mobile-test.png`
 
-evidence/05-mobile-test.png
-8. Navigation Testing
+---
+
+## Mobile Horizontal Scroll Check
+
+A small mobile viewport was specifically checked for unintended horizontal scrolling or overlapping content.
+
+**Result:** No critical horizontal-scroll or overlap issue was identified.
+
+**Status:** ✅ PASS
+
+**Evidence:** `evidence/18-mobile-horizontal-scroll-check.png`
+
+---
+
+## Keyboard Accessibility
+
+Interactive elements were tested using keyboard `Tab` navigation.
+
+**Expected:** Interactive elements should be reachable using the keyboard and visible focus states should be present.
+
+**Result:** Keyboard focus was visible and interactive elements could be reached using Tab navigation.
+
+**Status:** ✅ PASS
+
+**Evidence:** `evidence/21-keyboard-focus-accessibility.png`
+
+---
+
+## Navigation Testing
 
 The main navigation was tested to verify that the site's sections could be reached correctly.
 
-Result
+**Result:** Navigation behaved as expected during the test.
 
-Navigation behaved as expected during the test.
+**Status:** ✅ PASS
 
-Status
+**Evidence:** `evidence/06-navigation.png`
 
-PASS
+---
 
-Evidence:
-
-evidence/06-navigation.png
-9. CTA Testing
+## CTA Testing
 
 The portfolio's call-to-action links were tested.
 
-Result
+**Result:** The tested CTA links behaved as expected.
 
-The tested CTA links behaved as expected.
+**Status:** ✅ PASS
 
-Status
+**Evidence:** `evidence/07-cta-links.png`
 
-PASS
+---
 
-Evidence:
-
-evidence/07-cta-links.png
-10. Footer Testing
+## Footer Testing
 
 Footer links and interactions were checked.
 
-Result
+**Result:** The tested footer links behaved as expected.
 
-The tested footer links behaved as expected.
+**Status:** ✅ PASS
 
-Status
+**Evidence:** `evidence/08-footer-links.png`
 
-PASS
+---
 
-Evidence:
-
-evidence/08-footer-links.png
-11. Project Links
+## Project Links
 
 The project cards were checked for external links.
 
-Finding
+**Finding**
 
 Some projects do not currently have external demo or repository links because those projects are still in progress.
 
-Classification
-
-KNOWN LIMITATION
+**Classification:** ⚠️ KNOWN LIMITATION
 
 No fake or placeholder links were added.
 
 Real links can be added when the related projects are completed and available.
 
-Evidence
-evidence/09-project-links.png
-12. SEO Metadata
+**Evidence:** `evidence/09-project-links.png`
+
+---
+
+## SEO Metadata
 
 The portfolio was checked for basic SEO metadata.
 
 The page includes a descriptive title and meta description.
 
-Title
+**Title**
+
+```html
 <title>Kanak Chaudhary | Backend Developer & AI Enthusiast</title>
-Meta Description
+```
+
+**Meta Description**
+
+```html
 <meta
   name="description"
   content="Portfolio of Kanak Chaudhary — BCA student, backend developer, and AI enthusiast."
 />
-Status
+```
 
-PASS
+**Status:** ✅ PASS
 
-Evidence:
+**Evidence:** `evidence/10-seo-meta-tags.png`
 
-evidence/10-seo-meta-tags.png
-13. Open Graph Metadata
+---
+
+## Open Graph Metadata
 
 During the hardening pass, Open Graph metadata was identified as an area requiring improvement.
 
-Finding
+**Finding**
 
 The initial metadata state did not contain the required Open Graph tags.
 
-Evidence:
+**Evidence:** `evidence/11-og-tags-missing.png`
 
-evidence/11-og-tags-missing.png
-Fix
+**Fix**
 
-Open Graph metadata was added to index.html.
+Open Graph metadata was added to `index.html`.
 
+```html
 <meta property="og:type" content="website" />
 
 <meta
@@ -286,21 +368,23 @@ Open Graph metadata was added to index.html.
   property="og:url"
   content="https://03-survive-the-crit.vercel.app/"
 />
-Verification
+```
 
-The updated metadata was checked after the fix.
+**Verification**
 
-Evidence:
+The updated metadata was checked after deployment.
 
-evidence/12-seo-og-tags-fixed.png
-Status
+**Status:** ✅ FIXED
 
-FIXED
+**Evidence:** `evidence/12-seo-og-tags-fixed.png`
 
-14. Twitter/X Metadata
+---
+
+## Twitter/X Metadata
 
 Twitter/X metadata was added during the hardening pass.
 
+```html
 <meta name="twitter:card" content="summary" />
 
 <meta
@@ -312,123 +396,211 @@ Twitter/X metadata was added during the hardening pass.
   name="twitter:description"
   content="Portfolio of Kanak Chaudhary — BCA student, backend developer, and AI enthusiast."
 />
+```
 
 The deployed metadata was checked after the change.
 
-Evidence:
+**Status:** ✅ FIXED
 
-evidence/13-seo-twitter-tags-fixed.png
-Status
+**Evidence:** `evidence/13-seo-twitter-tags-fixed.png`
 
-FIXED
+---
 
-15. Deployment Issues Found and Fixed
-Issue 1 — Incorrect Vercel Root Directory
+## Deployment Issues Found and Fixed
+
+### Issue 1 — Incorrect Vercel Root Directory
 
 The first Vercel deployment attempted to build the repository root instead of the actual Vite project.
 
-Error
+**Error**
+
+```text
 sh: line 1: vite: command not found
 Error: Command "vite build" exited with 127
-Fix
+```
+
+**Fix**
 
 The Vercel Root Directory was changed to:
 
+```text
 Week-06/03_Survive-The-Crit
-Status
+```
 
-FIXED
+**Status:** ✅ FIXED
 
-Issue 2 — Vite Permission Error
+---
+
+### Issue 2 — Vite Permission Error
 
 After correcting the Root Directory, Vercel encountered a Vite execution permission error.
 
-Error
+**Error**
+
+```text
 Permission denied
-
 Error: Command "npm run build" exited with 126
-Fix
+```
 
-The Vercel build command was changed to:
+**Fix**
 
+The Vercel Build Command was changed to:
+
+```bash
 node node_modules/vite/bin/vite.js build
-Status
+```
 
-FIXED
+**Status:** ✅ FIXED
 
-16. Search Findability
+---
+
+## Production Deployment Flow
+
+Week 07 changes were deployed through the existing Vercel project.
+
+```text
+Week-07 Changes
+      ↓
+Local Project Update
+      ↓
+GitHub Push
+      ↓
+Vercel Detects New Commit
+      ↓
+New Deployment
+      ↓
+03-survive-the-crit.vercel.app
+      ↓
+Updated Production Version
+```
+
+The live URL remained: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+
+---
+
+## Search Findability
 
 A Google search was performed for:
 
+```text
 "Kanak Chaudhary" portfolio
+```
 
 Relevant results associated with the portfolio/GitHub presence were visible.
 
-Status
+**Status:** ✅ PASS
 
-PASS
+**Evidence:** `evidence/16-search-findability-google.png`
 
-Evidence:
+---
 
-evidence/16-search-findability-google.png
-17. Performance Testing
+## Performance Testing
 
 The deployed portfolio was checked using PageSpeed Insights.
 
-Desktop
-Category	Score
-Performance	100
-Accessibility	97
-Best Practices	100
-SEO	100
+**Desktop**
 
-Evidence:
+| Category | Score |
+|---|---:|
+| Performance | 100 |
+| Accessibility | 97 |
+| Best Practices | 100 |
+| SEO | 100 |
 
-evidence/15-pagespeed-desktop.png
-Mobile
-Category	Score
-Performance	100
-Accessibility	98
-Best Practices	100
-SEO	100
+**Evidence:** `evidence/15-pagespeed-desktop.png`
 
-Evidence:
+**Mobile**
 
-evidence/14-pagespeed-mobile.png
-Result
+| Category | Score |
+|---|---:|
+| Performance | 100 |
+| Accessibility | 98 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+**Evidence:** `evidence/14-pagespeed-mobile.png`
 
 No critical performance issue was identified during this hardening pass.
 
-18. Fix-Now Findings
+---
+
+## Fix-Now Findings
 
 The actionable issues discovered during the hardening process were addressed.
 
-Finding	Action	Status
-Incorrect Vercel Root Directory	Updated project root	FIXED
-Vite execution permission issue	Updated build command	FIXED
-Missing Open Graph metadata	Added OG tags	FIXED
-Missing Twitter/X metadata	Added Twitter/X tags	FIXED
+| Finding | Action | Status |
+|---|---|---|
+| Incorrect Vercel Root Directory | Updated project root | FIXED |
+| Vite execution permission issue | Updated build command | FIXED |
+| Missing Open Graph metadata | Added OG tags | FIXED |
+| Missing Twitter/X metadata | Added Twitter/X tags | FIXED |
+| Contact-form validation/flow | Verified and hardened | FIXED |
+| Rapid/double submission | Added submission lock | FIXED |
 
 The basic SEO title and description were also verified during the pass.
 
-19. Known Limitations
+---
+
+## Known Limitations
 
 The main remaining limitation is:
 
-Project Links
+**Project Links**
 
 Some project cards do not currently have external demo/repository links because the related projects are still in progress.
 
 This was documented instead of adding fake or placeholder URLs.
 
-Status
+**Status:** ⚠️ KNOWN LIMITATION
 
-KNOWN LIMITATION
+---
 
-20. Evidence Structure
+## Hardening Review
 
-All Week-07 screenshots are stored inside the evidence/ folder.
+A structured peer hardening review was completed after the main testing and fixes.
 
+**Reviewer Feedback**
+
+The reviewer confirmed that:
+
+- The site loaded normally.
+- The portfolio structure was clear.
+- No obvious major visual or breaking issue was identified.
+- External project/demo/repository links should be rechecked.
+- CTAs should clearly communicate where they lead.
+- The contact-form flow should be verified.
+- Mobile layout should be checked for scrolling or overlap.
+- Keyboard focus should remain visible.
+
+**Recommended Checks Completed**
+
+- [x] Empty contact-form submission
+- [x] Invalid contact-form input
+- [x] Successful form submission
+- [x] Actual email delivery
+- [x] Rapid/double submission
+- [x] Navigation and CTA interactions
+- [x] Mobile layout
+- [x] Mobile horizontal-scroll check
+- [x] Project/external link review
+- [x] Keyboard focus
+- [x] SEO metadata
+- [x] Social sharing metadata
+- [x] Performance checks
+
+**Evidence:** `evidence/17-hardening-review-peer-feedback.png`
+
+**Review Status:** ✅ COMPLETE
+
+No clearly visible critical issue was identified during the peer review.
+
+---
+
+## Evidence Structure
+
+All Week-07 screenshots are stored inside the `evidence/` folder.
+
+```text
 evidence/
 ├── 01-empty-form.png
 ├── 02-garbage-input.png
@@ -445,11 +617,21 @@ evidence/
 ├── 13-seo-twitter-tags-fixed.png
 ├── 14-pagespeed-mobile.png
 ├── 15-pagespeed-desktop.png
-└── 16-search-findability-google.png
-21. Documentation Structure
+├── 16-search-findability-google.png
+├── 17-hardening-review-peer-feedback.png
+├── 18-mobile-horizontal-scroll-check.png
+├── 19-contact-form-submission-success.png
+├── 20-contact-form-email-received.png
+└── 21-keyboard-focus-accessibility.png
+```
+
+---
+
+## Documentation Structure
 
 The complete Week-07 assignment is organized as:
 
+```text
 Week-07/
 └── 01_Break-Your-Own-Site/
     ├── README.md
@@ -458,6 +640,8 @@ Week-07/
     ├── WHERE-IT-BREAKS.md
     ├── FIXES.md
     ├── SEO-AND-PERFORMANCE.md
+    ├── AI-AUDIT.md
+    ├── CRIT-REVIEW.md
     └── evidence/
         ├── 01-empty-form.png
         ├── 02-garbage-input.png
@@ -474,94 +658,105 @@ Week-07/
         ├── 13-seo-twitter-tags-fixed.png
         ├── 14-pagespeed-mobile.png
         ├── 15-pagespeed-desktop.png
-        └── 16-search-findability-google.png
-22. Final Verification
+        ├── 16-search-findability-google.png
+        ├── 17-hardening-review-peer-feedback.png
+        ├── 18-mobile-horizontal-scroll-check.png
+        ├── 19-contact-form-submission-success.png
+        ├── 20-contact-form-email-received.png
+        └── 21-keyboard-focus-accessibility.png
+```
+
+---
+
+## Final Verification
 
 After applying the fixes, the deployed site was checked again.
 
-Verified
-Site loads successfully
-Vercel deployment works
-Contact form validation works
-Invalid input is handled
-Valid submission works
-Rapid/double submission was tested
-Navigation works
-CTA links work
-Footer links work
-Responsive/mobile layout works
-Basic SEO metadata is present
-Open Graph metadata is present
-Twitter/X metadata is present
-Search findability was checked
-Desktop PageSpeed was checked
-Mobile PageSpeed was checked
-Known project-link limitation is documented
-23. Hardening Review
+**Verified**
 
-The portfolio is prepared for mentor/structured peer hardening review.
+- [x] Site loads successfully
+- [x] Vercel deployment works
+- [x] Contact form validation works
+- [x] Invalid input is handled
+- [x] Valid submission works
+- [x] Form success state works
+- [x] Email delivery was verified
+- [x] Rapid/double submission was tested
+- [x] Navigation works
+- [x] CTA links work
+- [x] Footer links work
+- [x] Responsive/mobile layout works
+- [x] Mobile horizontal scrolling was checked
+- [x] Keyboard focus is visible
+- [x] Basic SEO metadata is present
+- [x] Open Graph metadata is present
+- [x] Twitter/X metadata is present
+- [x] Search findability was checked
+- [x] Desktop PageSpeed was checked
+- [x] Mobile PageSpeed was checked
+- [x] Known project-link limitation is documented
+- [x] Peer hardening review was completed
 
-The reviewer should focus on:
+---
 
-Form behaviour
-Navigation and interactions
-Responsive layout
-Project links
-SEO metadata
-Social sharing metadata
-Performance
-Any remaining usability issues
-Review Status
+## Final Status
 
-PENDING REVIEW
+| Area | Status |
+|---|---|
+| Core functionality | PASS |
+| Form validation | PASS |
+| Form submission | PASS |
+| Email delivery | PASS |
+| Rapid/double submission | PASS |
+| Navigation | PASS |
+| CTA links | PASS |
+| Footer links | PASS |
+| Responsive testing | PASS |
+| Mobile scroll check | PASS |
+| Keyboard accessibility | PASS |
+| SEO metadata | PASS |
+| Open Graph metadata | FIXED |
+| Twitter/X metadata | FIXED |
+| Search findability | PASS |
+| Desktop performance | PASS |
+| Mobile performance | PASS |
+| Project links | KNOWN LIMITATION |
+| Critical unresolved | NONE IDENTIFIED |
+| Hardening review | COMPLETE |
 
-Reviewer feedback will be added after an actual mentor or peer review is completed.
+---
 
-No review feedback is being fabricated before the review.
-
-24. Final Status
-Core functionality       → PASS
-Form validation          → PASS
-Navigation               → PASS
-CTA links                → PASS
-Footer links             → PASS
-Responsive testing       → PASS
-SEO metadata             → PASS
-Open Graph metadata      → FIXED
-Twitter/X metadata       → FIXED
-Search findability       → PASS
-Desktop performance      → PASS
-Mobile performance       → PASS
-Project links            → KNOWN LIMITATION
-Critical unresolved      → NONE IDENTIFIED
-Hardening review         → PENDING
-25. What I Learned
+## What I Learned
 
 This exercise showed that a website can appear complete during normal development while still having issues in deployment configuration, metadata, or edge-case usage.
 
 The hardening process reinforced the importance of:
 
-Testing unexpected input
-Testing rapid user actions
-Checking responsive behaviour
-Verifying deployment configuration
-Checking production metadata
-Testing social sharing metadata
-Checking search findability
-Measuring performance
-Separating actual bugs from known limitations
-Retesting after fixes
-Documenting evidence honestly
-26. Conclusion
+- Testing unexpected input
+- Testing rapid user actions
+- Checking responsive behaviour
+- Checking mobile scrolling
+- Verifying keyboard interaction
+- Verifying deployment configuration
+- Checking production metadata
+- Testing social sharing metadata
+- Checking search findability
+- Measuring performance
+- Separating actual bugs from known limitations
+- Retesting after fixes
+- Getting external review
+- Documenting evidence honestly
 
-The Week-07 "Break Your Own Site" hardening pass was completed by intentionally testing the portfolio, recording findings, fixing actionable issues, verifying the production deployment, and documenting the remaining limitation.
+---
 
-The final deployed portfolio is available at:
+## Conclusion
 
-https://03-survive-the-crit.vercel.app/
+The Week-07 "Break Your Own Site" hardening pass was completed by intentionally testing the portfolio, recording findings, fixing actionable issues, verifying the production deployment, completing a structured peer review, and documenting the remaining limitation.
 
-The site has been checked for core functionality, form behaviour, responsiveness, navigation, SEO metadata, social metadata, search findability, and performance.
+The final deployed portfolio is available at: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+
+The site has been checked for core functionality, form behaviour, email delivery, responsiveness, navigation, keyboard accessibility, SEO metadata, social metadata, search findability, and performance.
 
 The remaining project-link limitation is documented as work in progress rather than hidden or replaced with placeholder links.
 
-Final status: READY FOR HARDENING REVIEW
+**Final Status: ✅ HARDENING PASS COMPLETE**

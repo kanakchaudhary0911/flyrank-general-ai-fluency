@@ -11,7 +11,27 @@ This document records the basic SEO, social sharing metadata, search findability
 **Portfolio:** Kanak Chaudhary
 **Role Focus:** Backend Developer & AI Enthusiast
 
-**Live URL:** 🔗 https://03-survive-the-crit.vercel.app/
+**Live URL:** 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+
+The Week-07 changes were applied to the existing portfolio project and deployed through the same Vercel project.
+
+**Deployment Flow**
+
+```text
+Week-07 changes
+      ↓
+Local project update
+      ↓
+GitHub push
+      ↓
+Vercel detects new commit
+      ↓
+New deployment
+      ↓
+03-survive-the-crit.vercel.app
+      ↓
+Updated Week-07 version
+```
 
 ---
 
@@ -25,7 +45,8 @@ The portfolio includes basic HTML metadata to describe the page clearly to searc
 <title>Kanak Chaudhary | Backend Developer & AI Enthusiast</title>
 ```
 
-**Purpose**
+*Purpose*
+
 The title identifies the owner of the portfolio and communicates the main professional focus of the website.
 
 **Status:** ✅ PASS
@@ -41,7 +62,8 @@ The page includes a meta description describing the portfolio.
 />
 ```
 
-**Purpose**
+*Purpose*
+
 The description provides a concise summary of the portfolio and its professional focus.
 
 **Status:** ✅ PASS
@@ -74,6 +96,7 @@ The following metadata was added:
 ```
 
 **Why It Was Added**
+
 Without structured social metadata, platforms may have limited information available for generating a useful link preview.
 
 The added Open Graph fields provide:
@@ -81,7 +104,11 @@ The added Open Graph fields provide:
 - Content type
 - Preview title
 - Preview description
-- Canonical page URL
+- Page URL
+
+**Verification**
+
+The deployed page metadata was checked after the Week-07 changes were deployed.
 
 **Status:** ✅ FIXED
 
@@ -106,7 +133,12 @@ Twitter/X metadata was also added.
 ```
 
 **Purpose**
+
 These tags provide structured information for supported Twitter/X link previews.
+
+**Verification**
+
+The deployed metadata was checked after the Week-07 changes were deployed.
 
 **Status:** ✅ FIXED
 
@@ -116,15 +148,19 @@ These tags provide structured information for supported Twitter/X link previews.
 
 A basic search was performed using:
 
-```
+```text
 "Kanak Chaudhary" portfolio
 ```
 
 **Observation**
+
 The search results returned relevant results associated with Kanak Chaudhary, including portfolio/GitHub-related results. This provided basic evidence that the portfolio identity and related online presence are discoverable through search.
 
 **Evidence**
+
 A screenshot of the Google search results was captured and added to the Week-07 evidence folder.
+
+**Evidence File:** `16-search-findability-google.png`
 
 **Status:** ✅ PASS
 
@@ -137,28 +173,34 @@ The deployed portfolio was checked using Google PageSpeed Insights. The test was
 **Desktop Results**
 
 | Category | Score |
-|---|---|
+|---|---:|
 | Performance | 100 |
 | Accessibility | 97 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-**Desktop Observation**
+*Desktop Observation*
+
 The desktop version achieved a Performance score of 100 and an SEO score of 100. Accessibility scored 97 and Best Practices scored 100.
+
+**Evidence File:** `15-pagespeed-desktop.png`
 
 **Status:** ✅ PASS
 
 **Mobile Results**
 
 | Category | Score |
-|---|---|
+|---|---:|
 | Performance | 100 |
 | Accessibility | 98 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-**Mobile Observation**
+*Mobile Observation*
+
 The mobile version achieved a Performance score of 100 and an SEO score of 100. Accessibility scored 98 and Best Practices scored 100.
+
+**Evidence File:** `14-pagespeed-mobile.png`
 
 **Status:** ✅ PASS
 
@@ -170,10 +212,12 @@ The PageSpeed check did not reveal a critical performance issue that required an
 
 The tested deployment showed:
 
-- Strong performance score
-- Strong SEO score
-- Strong best-practices score
-- High accessibility score
+- Performance score of 100 on desktop
+- Performance score of 100 on mobile
+- SEO score of 100 on desktop
+- SEO score of 100 on mobile
+- Strong best-practices scores
+- High accessibility scores
 
 Therefore, no additional performance fix was required during this hardening pass.
 
@@ -181,27 +225,15 @@ Therefore, no additional performance fix was required during this hardening pass
 
 ## 8. SEO & Performance Evidence
 
-The following evidence was collected during the testing process:
+The following evidence was collected during the testing process.
 
-**Search Findability**
-Screenshot showing Google search results for: `"Kanak Chaudhary" portfolio`
-
-**Desktop PageSpeed**
-Screenshot showing:
-- Performance: 100
-- Accessibility: 97
-- Best Practices: 100
-- SEO: 100
-
-**Mobile PageSpeed**
-Screenshot showing:
-- Performance: 100
-- Accessibility: 98
-- Best Practices: 100
-- SEO: 100
-
-**Social Metadata**
-Screenshots/checks were used to verify the added Open Graph and Twitter/X metadata.
+| Evidence | File | Description |
+|---|---|---|
+| Search Findability | `16-search-findability-google.png` | Google search results for `"Kanak Chaudhary" portfolio` |
+| Desktop PageSpeed | `15-pagespeed-desktop.png` | Performance: 100, Accessibility: 97, Best Practices: 100, SEO: 100 |
+| Mobile PageSpeed | `14-pagespeed-mobile.png` | Performance: 100, Accessibility: 98, Best Practices: 100, SEO: 100 |
+| Open Graph Metadata | `12-seo-og-tags-fixed.png` | Screenshot/check showing the added Open Graph metadata |
+| Twitter/X Metadata | `13-seo-twitter-tags-fixed.png` | Screenshot/check showing the added Twitter/X metadata |
 
 All collected screenshots are stored in the Week-07 evidence folder.
 
@@ -238,10 +270,14 @@ All collected screenshots are stored in the Week-07 evidence folder.
 
 ## 11. Conclusion
 
-The Week-07 SEO and performance pass confirmed that the deployed portfolio has basic SEO metadata, social sharing metadata, and strong PageSpeed results.
+The Week-07 SEO and performance pass confirmed that the deployed portfolio has basic SEO metadata, social sharing metadata, search findability evidence, and strong PageSpeed results.
 
 The main metadata gaps identified during the hardening process were fixed, and the final deployed version was rechecked.
 
+The Week-07 changes were deployed through the existing Vercel project, so the updated version remains available at:
+
+🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+
 The remaining documented limitation is unrelated to SEO or performance: some project cards do not yet have external demo/repository links because those projects are still in progress.
 
-Overall, the SEO and performance checks were completed successfully for the current portfolio version.
+Overall, the SEO and performance checks were completed successfully for the current Week-07 portfolio version.
