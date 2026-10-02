@@ -10,7 +10,7 @@ The goal of this assignment was to intentionally test my own site, identify wher
 
 ## Live Website
 
-🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+🔗 https://break-your-own-site-rose.vercel.app/
 
 ---
 
@@ -120,7 +120,7 @@ The goal was to find real issues rather than only collect successful test result
 | Desktop PageSpeed | `15-pagespeed-desktop.png` | PASS |
 | Google search findability | `16-search-findability-google.png` | PASS |
 | Peer hardening review | `17-hardening-review-peer-feedback.png` | COMPLETE |
-| Mobile horizontal-scroll check | `18-mobile-horizontal-scroll-check.png` | PASS |
+| Mobile horizontal-scroll check | `18-mobile-horizontal-scroll-check.jpeg` | PASS |
 | Contact-form success | `19-contact-form-submission-success.png` | PASS |
 | Email delivery | `20-contact-form-email-received.png` | PASS |
 | Keyboard focus/accessibility | `21-keyboard-focus-accessibility.png` | PASS |
@@ -138,10 +138,7 @@ The contact form was submitted without entering the required information.
 **Result:** Validation feedback was displayed correctly.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/01-empty-form.png`
-
----
 
 ### Garbage / Invalid Input
 
@@ -152,10 +149,7 @@ Invalid information was entered into the form, including an invalid email format
 **Result:** Invalid email validation appeared correctly.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/02-garbage-input.png`
-
----
 
 ### Valid Submission
 
@@ -166,10 +160,7 @@ The form was submitted with valid information.
 **Result:** The success state appeared correctly.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/19-contact-form-submission-success.png`
-
----
 
 ### Email Delivery
 
@@ -180,10 +171,7 @@ The successful form submission was verified through the Formspree email workflow
 **Result:** The Formspree notification email was received successfully.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/20-contact-form-email-received.png`
-
----
 
 ### Rapid / Double Submission
 
@@ -194,7 +182,6 @@ The form was tested with rapid repeated submission.
 **Result:** The submission lock prevented duplicate submission behaviour.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/03-double-submit.png`
 
 ---
@@ -206,7 +193,6 @@ The portfolio was tested under different browser/device conditions.
 **Result:** The tested site remained functional during the browser/device checks.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/04-browser-test.png`
 
 ---
@@ -225,33 +211,28 @@ The portfolio was checked on a mobile/responsive layout.
 **Result:** The main content remained usable.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/05-mobile-test.png`
 
----
-
-## Mobile Horizontal Scroll Check
+### Mobile Horizontal Scroll Check
 
 A small mobile viewport was specifically checked for unintended horizontal scrolling or overlapping content.
 
 **Result:** No critical horizontal-scroll or overlap issue was identified.
 
 **Status:** ✅ PASS
-
-**Evidence:** `evidence/18-mobile-horizontal-scroll-check.png`
+**Evidence:** `evidence/18-mobile-horizontal-scroll-check.jpeg`
 
 ---
 
 ## Keyboard Accessibility
 
-Interactive elements were tested using keyboard `Tab` navigation.
+Interactive elements were tested using keyboard Tab navigation.
 
 **Expected:** Interactive elements should be reachable using the keyboard and visible focus states should be present.
 
 **Result:** Keyboard focus was visible and interactive elements could be reached using Tab navigation.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/21-keyboard-focus-accessibility.png`
 
 ---
@@ -263,7 +244,6 @@ The main navigation was tested to verify that the site's sections could be reach
 **Result:** Navigation behaved as expected during the test.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/06-navigation.png`
 
 ---
@@ -275,7 +255,6 @@ The portfolio's call-to-action links were tested.
 **Result:** The tested CTA links behaved as expected.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/07-cta-links.png`
 
 ---
@@ -287,7 +266,6 @@ Footer links and interactions were checked.
 **Result:** The tested footer links behaved as expected.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/08-footer-links.png`
 
 ---
@@ -297,14 +275,11 @@ Footer links and interactions were checked.
 The project cards were checked for external links.
 
 **Finding**
-
 Some projects do not currently have external demo or repository links because those projects are still in progress.
 
 **Classification:** ⚠️ KNOWN LIMITATION
 
-No fake or placeholder links were added.
-
-Real links can be added when the related projects are completed and available.
+No fake or placeholder links were added. Real links can be added when the related projects are completed and available.
 
 **Evidence:** `evidence/09-project-links.png`
 
@@ -312,9 +287,7 @@ Real links can be added when the related projects are completed and available.
 
 ## SEO Metadata
 
-The portfolio was checked for basic SEO metadata.
-
-The page includes a descriptive title and meta description.
+The portfolio was checked for basic SEO metadata. The page includes a descriptive title and meta description.
 
 **Title**
 
@@ -332,7 +305,6 @@ The page includes a descriptive title and meta description.
 ```
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/10-seo-meta-tags.png`
 
 ---
@@ -342,13 +314,11 @@ The page includes a descriptive title and meta description.
 During the hardening pass, Open Graph metadata was identified as an area requiring improvement.
 
 **Finding**
-
 The initial metadata state did not contain the required Open Graph tags.
 
 **Evidence:** `evidence/11-og-tags-missing.png`
 
 **Fix**
-
 Open Graph metadata was added to `index.html`.
 
 ```html
@@ -366,16 +336,14 @@ Open Graph metadata was added to `index.html`.
 
 <meta
   property="og:url"
-  content="https://03-survive-the-crit.vercel.app/"
+  content="https://break-your-own-site-rose.vercel.app/"
 />
 ```
 
 **Verification**
-
 The updated metadata was checked after deployment.
 
 **Status:** ✅ FIXED
-
 **Evidence:** `evidence/12-seo-og-tags-fixed.png`
 
 ---
@@ -401,7 +369,6 @@ Twitter/X metadata was added during the hardening pass.
 The deployed metadata was checked after the change.
 
 **Status:** ✅ FIXED
-
 **Evidence:** `evidence/13-seo-twitter-tags-fixed.png`
 
 ---
@@ -410,7 +377,7 @@ The deployed metadata was checked after the change.
 
 ### Issue 1 — Incorrect Vercel Root Directory
 
-The first Vercel deployment attempted to build the repository root instead of the actual Vite project.
+The earlier Vercel deployment attempted to build the repository root instead of the actual Vite project.
 
 **Error**
 
@@ -420,20 +387,19 @@ Error: Command "vite build" exited with 127
 ```
 
 **Fix**
+The earlier Vercel project used the correct Week-06 root directory:
 
-The Vercel Root Directory was changed to:
-
-```text
+```
 Week-06/03_Survive-The-Crit
 ```
 
 **Status:** ✅ FIXED
 
----
+This was part of the earlier deployment troubleshooting history. The original Week-06 deployment was intentionally left unchanged for the Week-07 assignment.
 
 ### Issue 2 — Vite Permission Error
 
-After correcting the Root Directory, Vercel encountered a Vite execution permission error.
+After correcting the earlier Root Directory, Vercel encountered a Vite execution permission error.
 
 **Error**
 
@@ -443,10 +409,9 @@ Error: Command "npm run build" exited with 126
 ```
 
 **Fix**
-
 The Vercel Build Command was changed to:
 
-```bash
+```
 node node_modules/vite/bin/vite.js build
 ```
 
@@ -454,9 +419,25 @@ node node_modules/vite/bin/vite.js build
 
 ---
 
-## Production Deployment Flow
+## Final Week-07 Deployment
 
-Week 07 changes were deployed through the existing Vercel project.
+The final Week-07 version was deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
+
+**Week-07 Root Directory**
+
+```
+Week-07/01_Break-Your-Own-Site
+```
+
+**Final Live URL**
+
+🔗 https://break-your-own-site-rose.vercel.app/
+
+This deployment contains the final Week-07 hardening changes and was used for the final production verification.
+
+### Production Deployment Flow
+
+The final Week-07 deployment follows this flow:
 
 ```text
 Week-07 Changes
@@ -469,12 +450,12 @@ Vercel Detects New Commit
       ↓
 New Deployment
       ↓
-03-survive-the-crit.vercel.app
+break-your-own-site-rose.vercel.app
       ↓
-Updated Production Version
+Updated Week-07 Production Version
 ```
 
-The live URL remained: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The original Week-06 deployment remained separate and unchanged.
 
 ---
 
@@ -482,14 +463,13 @@ The live URL remained: 🔗 [https://03-survive-the-crit.vercel.app/](https://03
 
 A Google search was performed for:
 
-```text
+```
 "Kanak Chaudhary" portfolio
 ```
 
 Relevant results associated with the portfolio/GitHub presence were visible.
 
 **Status:** ✅ PASS
-
 **Evidence:** `evidence/16-search-findability-google.png`
 
 ---
@@ -501,7 +481,7 @@ The deployed portfolio was checked using PageSpeed Insights.
 **Desktop**
 
 | Category | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 97 |
 | Best Practices | 100 |
@@ -512,7 +492,7 @@ The deployed portfolio was checked using PageSpeed Insights.
 **Mobile**
 
 | Category | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 98 |
 | Best Practices | 100 |
@@ -546,7 +526,6 @@ The basic SEO title and description were also verified during the pass.
 The main remaining limitation is:
 
 **Project Links**
-
 Some project cards do not currently have external demo/repository links because the related projects are still in progress.
 
 This was documented instead of adding fake or placeholder URLs.
@@ -600,7 +579,7 @@ No clearly visible critical issue was identified during the peer review.
 
 All Week-07 screenshots are stored inside the `evidence/` folder.
 
-```text
+```
 evidence/
 ├── 01-empty-form.png
 ├── 02-garbage-input.png
@@ -619,7 +598,7 @@ evidence/
 ├── 15-pagespeed-desktop.png
 ├── 16-search-findability-google.png
 ├── 17-hardening-review-peer-feedback.png
-├── 18-mobile-horizontal-scroll-check.png
+├── 18-mobile-horizontal-scroll-check.jpeg
 ├── 19-contact-form-submission-success.png
 ├── 20-contact-form-email-received.png
 └── 21-keyboard-focus-accessibility.png
@@ -631,7 +610,7 @@ evidence/
 
 The complete Week-07 assignment is organized as:
 
-```text
+```
 Week-07/
 └── 01_Break-Your-Own-Site/
     ├── README.md
@@ -660,7 +639,7 @@ Week-07/
         ├── 15-pagespeed-desktop.png
         ├── 16-search-findability-google.png
         ├── 17-hardening-review-peer-feedback.png
-        ├── 18-mobile-horizontal-scroll-check.png
+        ├── 18-mobile-horizontal-scroll-check.jpeg
         ├── 19-contact-form-submission-success.png
         ├── 20-contact-form-email-received.png
         └── 21-keyboard-focus-accessibility.png
@@ -753,10 +732,12 @@ The hardening process reinforced the importance of:
 
 The Week-07 "Break Your Own Site" hardening pass was completed by intentionally testing the portfolio, recording findings, fixing actionable issues, verifying the production deployment, completing a structured peer review, and documenting the remaining limitation.
 
-The final deployed portfolio is available at: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The final deployed portfolio is available at:
+
+🔗 https://break-your-own-site-rose.vercel.app/
 
 The site has been checked for core functionality, form behaviour, email delivery, responsiveness, navigation, keyboard accessibility, SEO metadata, social metadata, search findability, and performance.
 
 The remaining project-link limitation is documented as work in progress rather than hidden or replaced with placeholder links.
 
-**Final Status: ✅ HARDENING PASS COMPLETE**
+**Final Status:** ✅ HARDENING PASS COMPLETE

@@ -54,7 +54,7 @@ AI helped translate the reviewer's project-related feedback into a consistent st
 
 This structure was applied across the five existing projects.
 
-The purpose was to make engineering reasoning and contribution easier to identify.
+The purpose was to make engineering reasoning and personal contribution easier to identify.
 
 ---
 

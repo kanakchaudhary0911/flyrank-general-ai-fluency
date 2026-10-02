@@ -12,24 +12,24 @@ The purpose was not to claim that the site was perfect, but to identify what cou
 
 The portfolio was tested through:
 
-- Form validation testing
-- Invalid input testing
-- Valid submission testing
-- Email delivery testing
-- Rapid/double submission testing
-- Navigation testing
-- CTA testing
-- Responsive/mobile testing
-- Mobile horizontal-scroll testing
-- Keyboard focus/accessibility testing
-- General interaction testing
-- Project link inspection
-- Production deployment testing
-- SEO metadata inspection
-- Social metadata verification
-- Search findability testing
-- Performance testing
-- Peer hardening review
+* Form validation testing
+* Invalid input testing
+* Valid submission testing
+* Email delivery testing
+* Rapid/double submission testing
+* Navigation testing
+* CTA testing
+* Responsive/mobile testing
+* Mobile horizontal-scroll testing
+* Keyboard focus/accessibility testing
+* General interaction testing
+* Project link inspection
+* Production deployment testing
+* SEO metadata inspection
+* Social metadata verification
+* Search findability testing
+* Performance testing
+* Peer hardening review
 
 The findings were classified into:
 
@@ -56,9 +56,9 @@ Error: Command "vite build" exited with 127
 
 The portfolio project was located inside a subdirectory of the GitHub repository. Vercel was initially attempting to build from the repository root instead of the portfolio project's directory.
 
-**Fix**
+**Historical Fix**
 
-The Vercel Root Directory was changed to:
+The original Week-06 Vercel project used the following Root Directory:
 
 ```text
 Week-06/03_Survive-The-Crit
@@ -81,7 +81,7 @@ After the Root Directory was corrected, the build reached the Vite build command
 **Error**
 
 ```text
-sh: line 1: /vercel/path0/Week-06/03_Survive-The-Crit/node_modules/.bin/vite: Permission denied
+sh: 1: /vercel/path0/Week-06/03_Survive-The-Crit/node_modules/.bin/vite: Permission denied
 Error: Command "npm run build" exited with 126
 ```
 
@@ -89,23 +89,23 @@ Error: Command "npm run build" exited with 126
 
 The dependency installation completed successfully, but the Vite executable inside `node_modules/.bin` could not be executed directly by the Vercel build environment.
 
-**Fix**
+**Historical Fix**
 
 The Vercel Build Command was changed from:
 
-```bash
+```text
 npm run build
 ```
 
 to:
 
-```bash
+```text
 node node_modules/vite/bin/vite.js build
 ```
 
 **Result**
 
-The production build completed successfully and the site became available through the production deployment.
+The production build completed successfully.
 
 **Status:** ✅ FIXED
 
@@ -125,7 +125,7 @@ The following metadata was added to `index.html`:
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Kanak Chaudhary | Backend Developer" />
 <meta property="og:description" content="Portfolio of Kanak Chaudhary — BCA student, backend developer, and AI enthusiast." />
-<meta property="og:url" content="https://03-survive-the-crit.vercel.app/" />
+<meta property="og:url" content="https://break-your-own-site-rose.vercel.app/" />
 ```
 
 **Verification**
@@ -234,12 +234,12 @@ The Twitter/X metadata was verified after deployment.
 
 **Test:** The main navigation sections were checked:
 
-- About
-- Skills
-- Experience
-- Projects
-- Education
-- Contact
+* About
+* Skills
+* Experience
+* Projects
+* Education
+* Contact
 
 **Result:** Navigation worked correctly.
 
@@ -255,8 +255,8 @@ The Twitter/X metadata was verified after deployment.
 
 **Tested CTAs**
 
-- View Projects
-- Contact Me
+* View Projects
+* Contact Me
 
 **Result:** The CTA interactions worked correctly.
 
@@ -284,10 +284,10 @@ The Twitter/X metadata was verified after deployment.
 
 **Test:** The portfolio was checked on a small mobile viewport specifically for:
 
-- Horizontal scrolling
-- Content overflow
-- Layout overlap
-- Elements extending outside the viewport
+* Horizontal scrolling
+* Content overflow
+* Layout overlap
+* Elements extending outside the viewport
 
 **Expected:** The page should not create problematic horizontal scrolling or overlapping content.
 
@@ -295,7 +295,7 @@ The Twitter/X metadata was verified after deployment.
 
 **Status:** ✅ PASS
 
-**Evidence:** `evidence/18-mobile-horizontal-scroll-check.png`
+**Evidence:** `evidence/18-mobile-horizontal-scroll-check.jpeg`
 
 ---
 
@@ -371,30 +371,30 @@ Add the appropriate live demo or repository links when the corresponding project
 
 **Tool:** Google PageSpeed Insights
 
-**Desktop Results**
+### Desktop Results
 
-| Metric | Score |
-|---|---:|
-| Performance | 100 |
-| Accessibility | 97 |
-| Best Practices | 100 |
-| SEO | 100 |
+| Metric         | Score |
+| -------------- | ----: |
+| Performance    |   100 |
+| Accessibility  |    97 |
+| Best Practices |   100 |
+| SEO            |   100 |
 
-**Mobile Results**
+### Mobile Results
 
-| Metric | Score |
-|---|---:|
-| Performance | 100 |
-| Accessibility | 98 |
-| Best Practices | 100 |
-| SEO | 100 |
+| Metric         | Score |
+| -------------- | ----: |
+| Performance    |   100 |
+| Accessibility  |    98 |
+| Best Practices |   100 |
+| SEO            |   100 |
 
 **Status:** ✅ PASS
 
 **Evidence:**
 
-- `evidence/15-pagespeed-desktop.png`
-- `evidence/14-pagespeed-mobile.png`
+* `evidence/15-pagespeed-desktop.png`
+* `evidence/14-pagespeed-mobile.png`
 
 ---
 
@@ -406,14 +406,14 @@ Add the appropriate live demo or repository links when the corresponding project
 
 The reviewer reported:
 
-- The site loaded normally.
-- The portfolio structure was clear.
-- No obvious major visual or breaking issue was identified.
-- External project, GitHub/repository, demo, and social links should be rechecked.
-- CTAs should clearly indicate where they lead.
-- The complete contact-form interaction flow should be verified.
-- Mobile horizontal scrolling/overlap should be checked.
-- Keyboard focus and interactive states should be visible.
+* The site loaded normally.
+* The portfolio structure was clear.
+* No obvious major visual or breaking issue was identified.
+* External project, GitHub/repository, demo, and social links should be rechecked.
+* CTAs should clearly indicate where they lead.
+* The complete contact-form interaction flow should be verified.
+* Mobile horizontal scrolling/overlap should be checked.
+* Keyboard focus and interactive states should be visible.
 
 **Result:** No clearly visible critical issue was identified.
 
@@ -427,30 +427,48 @@ The review recommendations were converted into concrete verification checks and 
 
 ## 21. Final Triage
 
-| Finding | Classification | Action |
-|---|---|---|
-| Vercel Root Directory | Fix Now | Fixed |
-| Vite build execution | Fix Now | Fixed |
-| Open Graph metadata | Fix Now | Added and verified |
-| Twitter/X metadata | Fix Now | Added and verified |
-| Empty form validation | No issue | Passed |
-| Invalid input validation | No issue | Passed |
-| Valid submission | No issue | Passed |
-| Email delivery | No issue | Passed |
-| Rapid/double submission | No issue | Passed |
-| Navigation | No issue | Passed |
-| CTA interactions | No issue | Passed |
-| Responsive/mobile layout | No issue | Passed |
-| Mobile horizontal scroll | No issue | Passed |
-| Keyboard focus/accessibility | No issue | Passed |
-| Search findability | No issue | Passed |
-| PageSpeed performance | No critical issue | Passed |
-| Peer hardening review | No critical issue | Completed |
-| Missing project links | Known limitation | Documented |
+| Finding                      | Classification    | Action             |
+| ---------------------------- | ----------------- | ------------------ |
+| Vercel Root Directory        | Fix Now           | Fixed              |
+| Vite build execution         | Fix Now           | Fixed              |
+| Open Graph metadata          | Fix Now           | Added and verified |
+| Twitter/X metadata           | Fix Now           | Added and verified |
+| Empty form validation        | No issue          | Passed             |
+| Invalid input validation     | No issue          | Passed             |
+| Valid submission             | No issue          | Passed             |
+| Email delivery               | No issue          | Passed             |
+| Rapid/double submission      | No issue          | Passed             |
+| Navigation                   | No issue          | Passed             |
+| CTA interactions             | No issue          | Passed             |
+| Responsive/mobile layout     | No issue          | Passed             |
+| Mobile horizontal scroll     | No issue          | Passed             |
+| Keyboard focus/accessibility | No issue          | Passed             |
+| Search findability           | No issue          | Passed             |
+| PageSpeed performance        | No critical issue | Passed             |
+| Peer hardening review        | No critical issue | Completed          |
+| Missing project links        | Known limitation  | Documented         |
 
 ---
 
-## 22. Final State
+## 22. Final Week-07 Deployment
+
+The hardened Week-07 version was deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
+
+**Week-07 Root Directory:**
+
+```text
+Week-07/01_Break-Your-Own-Site
+```
+
+**Final Live URL:**
+
+https://break-your-own-site-rose.vercel.app/
+
+The final Week-07 deployment contains the hardening changes documented in this file and was used for final production verification.
+
+---
+
+## 23. Final State
 
 The initial deployment issues identified during the hardening process were fixed.
 
@@ -466,7 +484,9 @@ A structured peer hardening review was completed and no clearly visible critical
 
 The only remaining documented limitation is that some project cards do not currently contain external demo/repository links because some projects are still in progress.
 
-The Week-07 changes were deployed through the existing Vercel project and are available at: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The final Week-07 hardened version is available at:
+
+https://break-your-own-site-rose.vercel.app/
 
 ---
 
@@ -480,26 +500,26 @@ Remaining limitations were documented honestly instead of being treated as compl
 
 The hardening process covered:
 
-- Form validation
-- Invalid input handling
-- Successful submission
-- Email delivery
-- Rapid/double submission
-- Navigation
-- CTA interactions
-- Responsive layout
-- Mobile horizontal scrolling
-- Keyboard focus
-- SEO metadata
-- Social metadata
-- Search findability
-- Production deployment
-- Performance
-- Peer hardening review
+* Form validation
+* Invalid input handling
+* Successful submission
+* Email delivery
+* Rapid/double submission
+* Navigation
+* CTA interactions
+* Responsive layout
+* Mobile horizontal scrolling
+* Keyboard focus
+* SEO metadata
+* Social metadata
+* Search findability
+* Production deployment
+* Performance
+* Peer hardening review
 
 **Final status:**
 
-- FIXED ISSUES: 4
-- KNOWN LIMITATIONS: 1
-- CRITICAL UNRESOLVED ISSUES: 0
-- HARDENING REVIEW: COMPLETE
+* **FIXED ISSUES:** 4
+* **KNOWN LIMITATIONS:** 1
+* **CRITICAL UNRESOLVED ISSUES:** 0
+* **HARDENING REVIEW:** COMPLETE

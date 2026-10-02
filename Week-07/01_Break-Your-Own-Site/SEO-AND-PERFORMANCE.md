@@ -11,9 +11,15 @@ This document records the basic SEO, social sharing metadata, search findability
 **Portfolio:** Kanak Chaudhary
 **Role Focus:** Backend Developer & AI Enthusiast
 
-**Live URL:** 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+**Live URL:** 🔗 https://break-your-own-site-rose.vercel.app/
 
-The Week-07 changes were applied to the existing portfolio project and deployed through the same Vercel project.
+The Week-07 changes were deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
+
+**Week-07 Root Directory:**
+
+```
+Week-07/01_Break-Your-Own-Site
+```
 
 **Deployment Flow**
 
@@ -26,11 +32,11 @@ GitHub push
       ↓
 Vercel detects new commit
       ↓
-New deployment
+New Week-07 deployment
       ↓
-03-survive-the-crit.vercel.app
+break-your-own-site-rose.vercel.app
       ↓
-Updated Week-07 version
+Updated Week-07 production version
 ```
 
 ---
@@ -45,8 +51,7 @@ The portfolio includes basic HTML metadata to describe the page clearly to searc
 <title>Kanak Chaudhary | Backend Developer & AI Enthusiast</title>
 ```
 
-*Purpose*
-
+**Purpose**
 The title identifies the owner of the portfolio and communicates the main professional focus of the website.
 
 **Status:** ✅ PASS
@@ -62,8 +67,7 @@ The page includes a meta description describing the portfolio.
 />
 ```
 
-*Purpose*
-
+**Purpose**
 The description provides a concise summary of the portfolio and its professional focus.
 
 **Status:** ✅ PASS
@@ -91,12 +95,11 @@ The following metadata was added:
 
 <meta
   property="og:url"
-  content="https://03-survive-the-crit.vercel.app/"
+  content="https://break-your-own-site-rose.vercel.app/"
 />
 ```
 
 **Why It Was Added**
-
 Without structured social metadata, platforms may have limited information available for generating a useful link preview.
 
 The added Open Graph fields provide:
@@ -107,7 +110,6 @@ The added Open Graph fields provide:
 - Page URL
 
 **Verification**
-
 The deployed page metadata was checked after the Week-07 changes were deployed.
 
 **Status:** ✅ FIXED
@@ -133,11 +135,9 @@ Twitter/X metadata was also added.
 ```
 
 **Purpose**
-
 These tags provide structured information for supported Twitter/X link previews.
 
 **Verification**
-
 The deployed metadata was checked after the Week-07 changes were deployed.
 
 **Status:** ✅ FIXED
@@ -148,16 +148,14 @@ The deployed metadata was checked after the Week-07 changes were deployed.
 
 A basic search was performed using:
 
-```text
+```
 "Kanak Chaudhary" portfolio
 ```
 
 **Observation**
-
 The search results returned relevant results associated with Kanak Chaudhary, including portfolio/GitHub-related results. This provided basic evidence that the portfolio identity and related online presence are discoverable through search.
 
 **Evidence**
-
 A screenshot of the Google search results was captured and added to the Week-07 evidence folder.
 
 **Evidence File:** `16-search-findability-google.png`
@@ -173,14 +171,13 @@ The deployed portfolio was checked using Google PageSpeed Insights. The test was
 **Desktop Results**
 
 | Category | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 97 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-*Desktop Observation*
-
+**Desktop Observation**
 The desktop version achieved a Performance score of 100 and an SEO score of 100. Accessibility scored 97 and Best Practices scored 100.
 
 **Evidence File:** `15-pagespeed-desktop.png`
@@ -190,14 +187,13 @@ The desktop version achieved a Performance score of 100 and an SEO score of 100.
 **Mobile Results**
 
 | Category | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 98 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-*Mobile Observation*
-
+**Mobile Observation**
 The mobile version achieved a Performance score of 100 and an SEO score of 100. Accessibility scored 98 and Best Practices scored 100.
 
 **Evidence File:** `14-pagespeed-mobile.png`
@@ -274,9 +270,17 @@ The Week-07 SEO and performance pass confirmed that the deployed portfolio has b
 
 The main metadata gaps identified during the hardening process were fixed, and the final deployed version was rechecked.
 
-The Week-07 changes were deployed through the existing Vercel project, so the updated version remains available at:
+The Week-07 changes were deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
 
-🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The updated Week-07 version is available at:
+
+🔗 https://break-your-own-site-rose.vercel.app/
+
+The Week-07 project uses the following Vercel Root Directory:
+
+```
+Week-07/01_Break-Your-Own-Site
+```
 
 The remaining documented limitation is unrelated to SEO or performance: some project cards do not yet have external demo/repository links because those projects are still in progress.
 

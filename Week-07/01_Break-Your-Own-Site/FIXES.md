@@ -9,7 +9,6 @@ This document records the issues discovered during the Week-07 hardening pass, t
 ## 1. Vercel Build Root Directory
 
 **Issue**
-
 The first Vercel deployment failed because Vercel was trying to build the repository root instead of the actual Vite project directory.
 
 **Error**
@@ -20,19 +19,16 @@ Error: Command "vite build" exited with 127
 ```
 
 **Root Cause**
-
-The project is located inside `Week-06/03_Survive-The-Crit`, but Vercel was initially configured to use the repository root as the project root.
+The project was located inside `Week-06/03_Survive-The-Crit`, but Vercel was initially configured to use the repository root as the project root.
 
 **Fix Applied**
-
 Updated the Vercel Root Directory to:
 
-```text
+```
 Week-06/03_Survive-The-Crit
 ```
 
 **Verification**
-
 After updating the root directory, Vercel correctly detected the project and attempted to run the Vite build from the correct folder.
 
 **Status:** ✅ FIXED
@@ -42,7 +38,6 @@ After updating the root directory, Vercel correctly detected the project and att
 ## 2. Vite Build Permission Error
 
 **Issue**
-
 After correcting the Vercel Root Directory, the deployment encountered another build error.
 
 **Error**
@@ -57,27 +52,24 @@ Error: Command "npm run build" exited with 126
 ```
 
 **Root Cause**
-
 The Vercel environment could not execute the Vite binary through the default npm script.
 
 **Fix Applied**
-
 Changed the Vercel Build Command from:
 
-```bash
+```
 npm run build
 ```
 
 to:
 
-```bash
+```
 node node_modules/vite/bin/vite.js build
 ```
 
 This executes the Vite JavaScript entry point directly instead of relying on the executable permission of the `.bin/vite` file.
 
 **Verification**
-
 The deployment completed successfully after changing the build command.
 
 **Status:** ✅ FIXED
@@ -87,11 +79,9 @@ The deployment completed successfully after changing the build command.
 ## 3. Open Graph Metadata
 
 **Issue**
-
 The portfolio initially had basic page metadata but did not have complete Open Graph metadata for social sharing previews.
 
 **Fix Applied**
-
 Added Open Graph metadata to `index.html`.
 
 ```html
@@ -103,16 +93,14 @@ Added Open Graph metadata to `index.html`.
 />
 <meta
   property="og:url"
-  content="https://03-survive-the-crit.vercel.app/"
+  content="https://break-your-own-site-rose.vercel.app/"
 />
 ```
 
 **Purpose**
-
 These tags provide structured information that platforms can use when generating a preview of the portfolio URL.
 
 **Verification**
-
 The deployed site metadata was checked after deployment.
 
 **Status:** ✅ FIXED
@@ -122,11 +110,9 @@ The deployed site metadata was checked after deployment.
 ## 4. Twitter/X Metadata
 
 **Issue**
-
 Twitter/X-specific metadata was not initially included.
 
 **Fix Applied**
-
 Added Twitter/X metadata to `index.html`.
 
 ```html
@@ -142,11 +128,9 @@ Added Twitter/X metadata to `index.html`.
 ```
 
 **Purpose**
-
 These tags provide structured information for link previews on supported social platforms.
 
 **Verification**
-
 The deployed metadata was checked after deployment.
 
 **Status:** ✅ FIXED
@@ -156,11 +140,9 @@ The deployed metadata was checked after deployment.
 ## 5. SEO Title and Description
 
 **Issue**
-
 The portfolio needed clear basic SEO metadata.
 
 **Fix Applied**
-
 Updated the page title:
 
 ```html
@@ -177,11 +159,9 @@ The page also includes a descriptive meta description:
 ```
 
 **Purpose**
-
 The title and description clearly communicate the purpose and content of the portfolio.
 
 **Verification**
-
 The deployed page was checked and the metadata was confirmed.
 
 **Status:** ✅ FIXED
@@ -191,7 +171,6 @@ The deployed page was checked and the metadata was confirmed.
 ## 6. Form Validation
 
 **Test Performed**
-
 The contact form was tested with:
 
 - Empty fields
@@ -199,7 +178,6 @@ The contact form was tested with:
 - Valid input
 
 **Result**
-
 The form correctly displayed validation feedback for invalid input and showed a success state for valid submission.
 
 **Status:** ✅ PASS — No Fix Required
@@ -209,7 +187,6 @@ The form correctly displayed validation feedback for invalid input and showed a 
 ## 7. Contact Form Submission and Email Delivery
 
 **Test Performed**
-
 The complete contact-form flow was tested from submission to email delivery.
 
 The test included:
@@ -220,11 +197,9 @@ The test included:
 - Verifying that the submitted details were received through Formspree email notification
 
 **Result**
-
 The form submission completed successfully and the submitted details were received in the configured email inbox.
 
 **Verification**
-
 A successful submission screenshot and the received email notification were captured as evidence.
 
 **Evidence**
@@ -239,11 +214,9 @@ A successful submission screenshot and the received email notification were capt
 ## 8. Rapid / Double Submission
 
 **Test Performed**
-
 The contact form submit action was triggered rapidly to check whether duplicate submissions could be created.
 
 **Result**
-
 The submission lock prevented duplicate rapid submissions while the request was being processed.
 
 **Status:** ✅ PASS — No Fix Required
@@ -253,7 +226,6 @@ The submission lock prevented duplicate rapid submissions while the request was 
 ## 9. Navigation and Interactive Elements
 
 **Test Performed**
-
 The portfolio navigation and interactive elements were tested, including:
 
 - Navigation links
@@ -263,7 +235,6 @@ The portfolio navigation and interactive elements were tested, including:
 - General page interactions
 
 **Result**
-
 The tested interactions behaved as expected.
 
 **Status:** ✅ PASS — No Fix Required
@@ -273,7 +244,6 @@ The tested interactions behaved as expected.
 ## 10. Responsive Layout and Mobile Horizontal Scroll
 
 **Test Performed**
-
 The site was checked across different viewport/device conditions, including a small mobile viewport.
 
 The test specifically checked for:
@@ -285,12 +255,11 @@ The test specifically checked for:
 - Content extending outside the viewport
 
 **Result**
-
 No problematic horizontal overflow or major layout overlap was observed during the test.
 
 **Evidence**
 
-- `18-mobile-horizontal-scroll-check.png`
+- `18-mobile-horizontal-scroll-check.jpeg`
 
 **Status:** ✅ PASS — No Fix Required
 
@@ -299,8 +268,7 @@ No problematic horizontal overflow or major layout overlap was observed during t
 ## 11. Keyboard Focus and Accessibility
 
 **Test Performed**
-
-The site was navigated using the keyboard `Tab` key to verify that interactive elements receive visible focus.
+The site was navigated using the keyboard Tab key to verify that interactive elements receive visible focus.
 
 The test included:
 
@@ -310,7 +278,6 @@ The test included:
 - Interactive navigation elements
 
 **Result**
-
 Keyboard focus was visible while moving through interactive elements.
 
 **Evidence**
@@ -324,15 +291,13 @@ Keyboard focus was visible while moving through interactive elements.
 ## 12. Search Findability
 
 **Test Performed**
-
 A Google search was performed for:
 
-```text
+```
 "Kanak Chaudhary" portfolio
 ```
 
 **Result**
-
 The search results showed relevant portfolio/GitHub results for the name.
 
 **Status:** ✅ PASS — No Fix Required
@@ -342,13 +307,12 @@ The search results showed relevant portfolio/GitHub results for the name.
 ## 13. Performance
 
 **Test Performed**
-
 The deployed site was checked using Google PageSpeed Insights.
 
 **Desktop Result**
 
 | Metric | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 97 |
 | Best Practices | 100 |
@@ -357,14 +321,13 @@ The deployed site was checked using Google PageSpeed Insights.
 **Mobile Result**
 
 | Metric | Score |
-|---|---:|
+|---|---|
 | Performance | 100 |
 | Accessibility | 98 |
 | Best Practices | 100 |
 | SEO | 100 |
 
 **Result**
-
 The site achieved strong scores across the tested categories.
 
 **Evidence**
@@ -395,9 +358,7 @@ The reviewer reported that:
 
 **Review Findings**
 
-The review did not identify a clearly visible critical issue.
-
-The recommendations were converted into concrete verification checks.
+The review did not identify a clearly visible critical issue. The recommendations were converted into concrete verification checks.
 
 **Verification Completed**
 
@@ -417,18 +378,31 @@ The recommendations were converted into concrete verification checks.
 ## 15. Project Demo/Repository Links
 
 **Finding**
-
 Some project cards do not currently contain external demo or repository links because those projects are still in progress.
 
 **Classification**
-
 This is a known limitation, not a broken interaction.
 
 **Action**
-
 No fake or placeholder links were added. Completed projects can receive their real demo/repository links when they are available.
 
 **Status:** ⚠️ KNOWN LIMITATION
+
+---
+
+## 16. Final Week-07 Deployment
+
+The hardened Week-07 version was deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
+
+**Week-07 Root Directory:**
+
+```
+Week-07/01_Break-Your-Own-Site
+```
+
+**Final Live URL:** 🔗 https://break-your-own-site-rose.vercel.app/
+
+This deployment contains the final Week-07 hardening changes and was used for the final production verification.
 
 ---
 
@@ -470,9 +444,7 @@ All identified deployment/configuration and metadata issues were addressed:
 
 **Hardening Review**
 
-The peer hardening review was completed.
-
-The recommended checks for:
+The peer hardening review was completed. The recommended checks for:
 
 - contact-form validation
 - successful submission
@@ -481,22 +453,18 @@ The recommended checks for:
 - keyboard focus
 - external links
 
-were verified.
-
-No clearly visible critical unresolved issue was identified during the hardening review.
+were verified. No clearly visible critical unresolved issue was identified during the hardening review.
 
 **Known Limitations**
 
 The only documented limitation is that some project cards do not yet have external demo/repository links because the related projects are still in progress.
 
----
-
-## Final State
+**Final State**
 
 The portfolio is deployed and accessible at:
 
-🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+🔗 https://break-your-own-site-rose.vercel.app/
 
 The final hardening pass found no critical unresolved issue affecting the core portfolio experience.
 
-**Final Status: ✅ HARDENING PASS COMPLETE**
+**Final Status:** ✅ HARDENING PASS COMPLETE

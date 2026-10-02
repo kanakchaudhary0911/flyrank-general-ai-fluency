@@ -4,46 +4,46 @@
 
 The goal of this testing pass was to intentionally test the deployed portfolio from a user's perspective and identify:
 
-- Broken interactions
-- Form validation issues
-- Responsive layout issues
-- Deployment problems
-- SEO and metadata issues
-- Search findability issues
-- Performance issues
-- Accessibility issues
-- Known limitations
+* Broken interactions
+* Form validation issues
+* Responsive layout issues
+* Deployment problems
+* SEO and metadata issues
+* Search findability issues
+* Performance issues
+* Accessibility issues
+* Known limitations
 
 The portfolio was tested on the deployed production site.
 
-**Live URL:** 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+**Live URL:** https://break-your-own-site-rose.vercel.app/
 
 ---
 
 ## Test Case Summary
 
-| ID | Test Area | Test | Expected Result | Actual Result | Status |
-|---|---|---|---|---|---|
-| T01 | Contact Form | Submit empty form | Form should prevent invalid submission and show validation | Validation feedback appeared correctly | PASS |
-| T02 | Contact Form | Submit invalid/garbage input | Invalid input should be rejected | Invalid email validation appeared correctly | PASS |
-| T03 | Contact Form | Submit valid input | Valid submission should show success state | Success state appeared correctly | PASS |
-| T04 | Contact Form | Verify email delivery | Submitted details should reach the configured inbox | Formspree email notification was received | PASS |
-| T05 | Contact Form | Rapid/double submission | Duplicate rapid submissions should be prevented | Submission lock prevented duplicate rapid submissions | PASS |
-| T06 | Navigation | Test navigation items | Navigation should reach intended sections | Navigation worked correctly | PASS |
-| T07 | CTA | Test View Projects and Contact Me | CTAs should perform their intended actions | CTA interactions worked correctly | PASS |
-| T08 | Responsive UI | Test mobile layout | Layout should remain usable on smaller screens | Mobile layout worked correctly | PASS |
-| T09 | Mobile Layout | Check horizontal scrolling/overlap | No problematic horizontal overflow should appear | No critical horizontal overflow or overlap found | PASS |
-| T10 | General Interaction | Click available interactive elements | Interactive elements should respond correctly | No critical interaction failures found | PASS |
-| T11 | Keyboard Accessibility | Test keyboard focus with Tab | Interactive elements should show visible focus | Keyboard focus was visible | PASS |
-| T12 | Project Links | Check project demo/repository links | Available links should work | Some project links are not yet added | KNOWN LIMITATION |
-| T13 | SEO | Inspect title and meta description | Basic SEO metadata should be present | Metadata was present | PASS |
-| T14 | Open Graph | Verify OG metadata | OG metadata should be present | OG metadata was added and verified | PASS |
-| T15 | Twitter/X | Verify Twitter/X metadata | Twitter/X metadata should be present | Twitter/X metadata was added and verified | PASS |
-| T16 | Production Deployment | Verify production build | Site should deploy successfully | Deployment succeeded after fixes | PASS |
-| T17 | Search Findability | Search portfolio/name | Relevant portfolio presence should be discoverable | Relevant GitHub results appeared | PASS |
-| T18 | Performance | Test desktop with PageSpeed Insights | Performance should be measured | Performance score: 100 | PASS |
-| T19 | Performance | Test mobile with PageSpeed Insights | Performance should be measured | Performance score: 100 | PASS |
-| T20 | Hardening Review | Structured peer review | Review should identify breakpoints/limitations | Peer review completed with no critical issue identified | PASS |
+| ID  | Test Area              | Test                                 | Expected Result                                            | Actual Result                                           | Status           |
+| --- | ---------------------- | ------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------- | ---------------- |
+| T01 | Contact Form           | Submit empty form                    | Form should prevent invalid submission and show validation | Validation feedback appeared correctly                  | PASS             |
+| T02 | Contact Form           | Submit invalid/garbage input         | Invalid input should be rejected                           | Invalid email validation appeared correctly             | PASS             |
+| T03 | Contact Form           | Submit valid input                   | Valid submission should show success state                 | Success state appeared correctly                        | PASS             |
+| T04 | Contact Form           | Verify email delivery                | Submitted details should reach the configured inbox        | Formspree email notification was received               | PASS             |
+| T05 | Contact Form           | Rapid/double submission              | Duplicate rapid submissions should be prevented            | Submission lock prevented duplicate rapid submissions   | PASS             |
+| T06 | Navigation             | Test navigation items                | Navigation should reach intended sections                  | Navigation worked correctly                             | PASS             |
+| T07 | CTA                    | Test View Projects and Contact Me    | CTAs should perform their intended actions                 | CTA interactions worked correctly                       | PASS             |
+| T08 | Responsive UI          | Test mobile layout                   | Layout should remain usable on smaller screens             | Mobile layout worked correctly                          | PASS             |
+| T09 | Mobile Layout          | Check horizontal scrolling/overlap   | No problematic horizontal overflow should appear           | No critical horizontal overflow or overlap found        | PASS             |
+| T10 | General Interaction    | Click available interactive elements | Interactive elements should respond correctly              | No critical interaction failures found                  | PASS             |
+| T11 | Keyboard Accessibility | Test keyboard focus with Tab         | Interactive elements should show visible focus             | Keyboard focus was visible                              | PASS             |
+| T12 | Project Links          | Check project demo/repository links  | Available links should work                                | Some project links are not yet added                    | KNOWN LIMITATION |
+| T13 | SEO                    | Inspect title and meta description   | Basic SEO metadata should be present                       | Metadata was present                                    | PASS             |
+| T14 | Open Graph             | Verify OG metadata                   | OG metadata should be present                              | OG metadata was added and verified                      | PASS             |
+| T15 | Twitter/X              | Verify Twitter/X metadata            | Twitter/X metadata should be present                       | Twitter/X metadata was added and verified               | PASS             |
+| T16 | Production Deployment  | Verify production build              | Site should deploy successfully                            | Deployment succeeded after fixes                        | PASS             |
+| T17 | Search Findability     | Search portfolio/name                | Relevant portfolio presence should be discoverable         | Relevant GitHub results appeared                        | PASS             |
+| T18 | Performance            | Test desktop with PageSpeed Insights | Performance should be measured                             | Performance score: 100                                  | PASS             |
+| T19 | Performance            | Test mobile with PageSpeed Insights  | Performance should be measured                             | Performance score: 100                                  | PASS             |
+| T20 | Hardening Review       | Structured peer review               | Review should identify breakpoints/limitations             | Peer review completed with no critical issue identified | PASS             |
 
 ---
 
@@ -123,12 +123,12 @@ The portfolio was tested on the deployed production site.
 
 **Action:** Tested the main navigation items:
 
-- About
-- Skills
-- Experience
-- Projects
-- Education
-- Contact
+* About
+* Skills
+* Experience
+* Projects
+* Education
+* Contact
 
 **Expected Result:** Each navigation item should take the user to the intended section.
 
@@ -144,8 +144,8 @@ The portfolio was tested on the deployed production site.
 
 **Action:** Tested the primary call-to-action buttons:
 
-- View Projects
-- Contact Me
+* View Projects
+* Contact Me
 
 **Expected Result:** Each CTA should perform its intended action.
 
@@ -181,7 +181,7 @@ The portfolio was tested on the deployed production site.
 
 **Status:** ✅ PASS
 
-**Evidence:** `evidence/18-mobile-horizontal-scroll-check.png`
+**Evidence:** `evidence/18-mobile-horizontal-scroll-check.jpeg`
 
 ---
 
@@ -205,10 +205,10 @@ The portfolio was tested on the deployed production site.
 
 The test included:
 
-- Links
-- Buttons
-- Form controls
-- Interactive navigation elements
+* Links
+* Buttons
+* Form controls
+* Interactive navigation elements
 
 **Expected Result:** Interactive elements should receive a visible focus state when navigated using the keyboard.
 
@@ -242,8 +242,8 @@ Some projects are still in progress, so their demo/repository links have not yet
 
 **Action:** Inspected the production HTML for:
 
-- Page title
-- Meta description
+* Page title
+* Meta description
 
 **Expected Result:** Basic SEO metadata should be present.
 
@@ -261,10 +261,10 @@ Some projects are still in progress, so their demo/repository links have not yet
 
 **Metadata Added**
 
-- `og:type`
-- `og:title`
-- `og:description`
-- `og:url`
+* `og:type`
+* `og:title`
+* `og:description`
+* `og:url`
 
 **Expected Result:** Open Graph metadata should be available for supported social sharing previews.
 
@@ -282,9 +282,9 @@ Some projects are still in progress, so their demo/repository links have not yet
 
 **Metadata Added**
 
-- `twitter:card`
-- `twitter:title`
-- `twitter:description`
+* `twitter:card`
+* `twitter:title`
+* `twitter:description`
 
 **Expected Result:** Twitter/X metadata should be available for supported sharing previews.
 
@@ -313,13 +313,15 @@ Error: Command "vite build" exited with 127
 
 The portfolio project is located inside a subdirectory of the GitHub repository. Vercel was initially building from the repository root instead of the portfolio project directory.
 
-**Fix Applied**
+**Historical Fix Applied**
 
-The Vercel Root Directory was configured as:
+The original Week-06 Vercel project used the following Root Directory:
 
 ```text
 Week-06/03_Survive-The-Crit
 ```
+
+This resolved the original repository-root build issue for the Week-06 deployment.
 
 **Second Deployment Issue**
 
@@ -328,23 +330,35 @@ After correcting the Root Directory, the build reached the Vite build step but e
 **Second Error**
 
 ```text
-sh: line 1: /vercel/path0/Week-06/03_Survive-The-Crit/node_modules/.bin/vite: Permission denied
+sh: 1: /vercel/path0/Week-06/03_Survive-The-Crit/node_modules/.bin/vite: Permission denied
 Error: Command "npm run build" exited with 126
 ```
 
-**Fix Applied**
+**Historical Fix Applied**
 
 The Vercel Build Command was changed to:
 
-```bash
+```text
 node node_modules/vite/bin/vite.js build
 ```
 
+**Final Week-07 Deployment**
+
+For Week-07, the hardened portfolio was deployed as a separate Vercel project so that the original Week-06 deployment remained unchanged.
+
+**Week-07 Root Directory:**
+
+```text
+Week-07/01_Break-Your-Own-Site
+```
+
+**Final Live URL:**
+
+https://break-your-own-site-rose.vercel.app/
+
 **Final Result**
 
-The production deployment completed successfully.
-
-The Week-07 changes are therefore served through the same live Vercel URL: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The Week-07 production deployment completed successfully and was verified on the final live URL.
 
 **Status:** ✅ PASS / FIXED
 
@@ -374,12 +388,12 @@ The Week-07 changes are therefore served through the same live Vercel URL: 🔗 
 
 **Results**
 
-| Metric | Score |
-|---|---:|
-| Performance | 100 |
-| Accessibility | 97 |
-| Best Practices | 100 |
-| SEO | 100 |
+| Metric         | Score |
+| -------------- | ----: |
+| Performance    |   100 |
+| Accessibility  |    97 |
+| Best Practices |   100 |
+| SEO            |   100 |
 
 **Status:** ✅ PASS
 
@@ -393,12 +407,12 @@ The Week-07 changes are therefore served through the same live Vercel URL: 🔗 
 
 **Results**
 
-| Metric | Score |
-|---|---:|
-| Performance | 100 |
-| Accessibility | 98 |
-| Best Practices | 100 |
-| SEO | 100 |
+| Metric         | Score |
+| -------------- | ----: |
+| Performance    |   100 |
+| Accessibility  |    98 |
+| Best Practices |   100 |
+| SEO            |   100 |
 
 **Status:** ✅ PASS
 
@@ -416,14 +430,14 @@ A structured peer hardening review was completed to identify issues that might h
 
 The reviewer reported:
 
-- The site loaded normally.
-- The portfolio structure was clear.
-- No obvious major visual or breaking issue was identified.
-- External project, GitHub/repository, demo, and social links should be rechecked.
-- CTAs should clearly indicate where they lead.
-- The complete contact-form interaction flow should be verified.
-- Mobile horizontal scrolling/overlap should be checked.
-- Keyboard focus and interactive states should be visible.
+* The site loaded normally.
+* The portfolio structure was clear.
+* No obvious major visual or breaking issue was identified.
+* External project, GitHub/repository, demo, and social links should be rechecked.
+* CTAs should clearly indicate where they lead.
+* The complete contact-form interaction flow should be verified.
+* Mobile horizontal scrolling/overlap should be checked.
+* Keyboard focus and interactive states should be visible.
 
 **Expected Result:** The review should identify actionable issues or confirm that no critical issue remains.
 
@@ -439,44 +453,44 @@ The recommendations were converted into concrete verification checks and tested.
 
 ## Final Test Summary
 
-**Passed**
+### Passed
 
 The following areas passed testing:
 
-- Empty form validation
-- Invalid input validation
-- Valid form submission
-- Email delivery
-- Rapid/double submission protection
-- Navigation
-- CTA interactions
-- Responsive/mobile layout
-- Mobile horizontal-scroll check
-- General interactions
-- Keyboard focus/accessibility
-- Basic SEO metadata
-- Open Graph metadata
-- Twitter/X metadata
-- Production deployment after fixes
-- Search findability
-- Desktop performance
-- Mobile performance
-- Peer hardening review
+* Empty form validation
+* Invalid input validation
+* Valid form submission
+* Email delivery
+* Rapid/double submission protection
+* Navigation
+* CTA interactions
+* Responsive/mobile layout
+* Mobile horizontal-scroll check
+* General interactions
+* Keyboard focus/accessibility
+* Basic SEO metadata
+* Open Graph metadata
+* Twitter/X metadata
+* Production deployment after fixes
+* Search findability
+* Desktop performance
+* Mobile performance
+* Peer hardening review
 
-**Fixed During Hardening**
+### Fixed During Hardening
 
 The following issues were identified and fixed during the hardening process:
 
-- Vercel Root Directory configuration
-- Vite production build execution
-- Open Graph metadata
-- Twitter/X metadata
+* Vercel Root Directory configuration
+* Vite production build execution
+* Open Graph metadata
+* Twitter/X metadata
 
-**Known Limitations**
+### Known Limitations
 
 The following limitation remains documented:
 
-- Some project cards do not currently contain external demo/repository links because some projects are still in progress.
+* Some project cards do not currently contain external demo/repository links because some projects are still in progress.
 
 ---
 
@@ -502,7 +516,15 @@ The peer hardening review was also completed, and its recommendations were conve
 
 The remaining known limitation has been documented transparently instead of being presented as completed functionality.
 
-The Week-07 changes are deployed through the existing Vercel project and are available at: 🔗 [https://03-survive-the-crit.vercel.app/](https://03-survive-the-crit.vercel.app/)
+The final Week-07 hardened version was deployed as a separate Vercel project and is available at:
+
+https://break-your-own-site-rose.vercel.app/
+
+**Week-07 Root Directory:**
+
+```text
+Week-07/01_Break-Your-Own-Site
+```
 
 This testing pass provides a documented trail from:
 
