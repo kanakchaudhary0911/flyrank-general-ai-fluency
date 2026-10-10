@@ -110,6 +110,7 @@ export default function App() {
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
             <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
+            <li><a href="#ai-work" onClick={() => setMenuOpen(false)}>AI Workflow</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
             <li><a href="#education" onClick={() => setMenuOpen(false)}>Education</a></li>
             <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
@@ -122,7 +123,7 @@ export default function App() {
         {/* HERO SECTION */}
         <section id="hero" className="hero-section">
           <span className="hero-eyebrow">
-            BACKEND DEVELOPMENT · DATA MODELING · AI-ASSISTED ENGINEERING
+            BACKEND DEVELOPMENT · AI-ASSISTED ENGINEERING · PRACTICAL SOFTWARE
           </span>
 
           <h1 className="hero-title">
@@ -130,10 +131,9 @@ export default function App() {
           </h1>
 
           <p className="hero-subtitle">
-            I build backend systems and data models designed for future features,
-            not just current requirements. My projects show how technical decisions
-            around databases, workflows, and system design support scalable and
-            maintainable software.
+            I build practical software experiences with a focus on backend systems,
+            data modeling, and AI-assisted engineering. My projects show how I turn
+            technical ideas into functional, testable, and maintainable software.
           </p>
 
           <div className="hero-cta">
@@ -158,6 +158,38 @@ export default function App() {
             computer science concepts while building projects that demonstrate
             technical decisions rather than only technology usage.
           </p>
+        </section>
+
+        {/* AI-ASSISTED ENGINEERING SECTION */}
+        <section id="ai-work">
+          <span className="section-eyebrow">AI-ASSISTED WORKFLOW</span>
+          <h2 className="section-title">How I Build With AI</h2>
+
+          <div className="grid-3">
+            <div className="card">
+              <h3 className="card-title">AI as an Engineering Tool</h3>
+              <p className="card-desc">
+                I use AI-assisted workflows to explore implementation approaches,
+                refine solutions, and move from technical ideas to working software.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="card-title">Human-Led Decisions</h3>
+              <p className="card-desc">
+                I make the final decisions around architecture, data modeling,
+                implementation, testing, and what is actually shipped.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="card-title">Practical Outcome</h3>
+              <p className="card-desc">
+                The goal is not AI for its own sake, but faster iteration,
+                clearer problem-solving, and maintainable software that I can explain.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* TECHNICAL SKILLS SECTION */}
